@@ -3435,7 +3435,8 @@ a {
   transition: .3s; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 3rem;
+  font-weight: 400; }
 
 h2 {
   font-size: 2.4rem; }
@@ -3443,8 +3444,29 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
+p {
+  line-height: 2; }
+  p a {
+    color: #f05525;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+    p a:hover {
+      border-bottom-color: #f05525;
+      color: #f05525;
+      text-decoration: none; }
+
+.ucase {
+  text-transform: uppercase; }
+
 .regular {
   font-family: "SegoeUIRegular"; }
+
+.underline {
+  position: relative; }
+  .underline:after {
+    border-bottom: 2px solid #f05525;
+    left: 0;
+    bottom: -10px;
+    width: 100%; }
 
 strong,
 .bold {
@@ -3471,10 +3493,28 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .underline:after {
   content: "";
   display: block;
   position: absolute; }
+
+.btn {
+  align-items: center;
+  border-radius: 46px;
+  display: flex;
+  font-size: 1.5rem;
+  height: 46px;
+  justify-content: center;
+  margin-top: 2.5rem;
+  width: 190px; }
+  .btn:hover {
+    color: #fff;
+    text-decoration: none; }
+  .btn-gray {
+    background-color: #808081;
+    color: #fff; }
+  .btn-hover-orange:hover {
+    background-color: #f05525; }
 
 /* =header
 ---------------------------*/
@@ -3552,6 +3592,13 @@ em strong {
   src: local("Avanti Bold"), local("AvantiBold"), url("/template/fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("/template/fonts/AvantiBold/AvantiBold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
+
+.intro {
+  margin-top: 5rem; }
+  .intro .title {
+    margin-bottom: 4rem; }
+  .intro img {
+    max-width: 100%; }
 
 /* =mobile-menu
 ---------------------------*/

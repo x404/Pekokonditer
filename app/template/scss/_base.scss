@@ -106,15 +106,41 @@ input::-moz-focus-inner{
 /*** standart classes *****/
 p{}
 a{color:#020000; transition: .3s}
-h1{font-size:2.5rem}
+h1{font-size:3rem; font-weight: 400;}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
+
+p{
+	line-height: 2;
+	a{
+		color: $color4;
+		border-bottom: 1px dashed rgba(0,0,0,0);
+		&:hover{
+			border-bottom-color: $color4;
+			color: $color4;
+			text-decoration: none;
+		}
+	}
+}
+
+.ucase{
+	text-transform: uppercase;
+}
 
 .regular{
 	font-family: "SegoeUIRegular";	
 }
 
-
+.underline{
+	position: relative;
+	&:after{
+		@extend .before;
+		border-bottom: 2px solid $color4;
+		left: 0;
+		bottom: -10px;
+		width: 100%;
+	}
+}
 
 strong,
 .bold{
@@ -161,6 +187,34 @@ em strong
 
 }
 
+
+.btn{
+	align-items: center;
+	border-radius: 46px;
+	display: flex;
+	font-size: 1.5rem;
+	height: 46px;
+	justify-content: center;
+	margin-top: 2.5rem;
+	width: 190px;
+
+	&:hover{
+		color: $color2;
+		text-decoration: none;
+	}
+
+	&-gray{
+		background-color: $color5;
+		color: $color2;
+	}
+	&-hover{
+		&-orange{
+			&:hover{
+				background-color: $color4;
+			}
+		}
+	}
+}
 
 
 /* =header
