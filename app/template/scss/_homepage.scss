@@ -120,3 +120,157 @@
 .radius-2{
 	border-radius: 2rem 2rem 0 0
 }
+
+
+.groups{
+	background-color: $color7;
+	margin-top: 3.8rem;
+	padding: 5rem 0;
+	position: relative;
+}
+
+#groups-carousel{
+	display: flex;
+	margin-top: 3.5rem;
+	position: relative;
+	z-index: 2;
+	&.slick-initialized{
+		display: block;
+	}
+
+	.slick-current{
+		.group__pic{
+			&:before{
+				background-color: $color4;
+			}
+			&:after{
+				height: 103px;
+				left: 8px;
+				top: 8px;
+				width: 103px;
+			}
+		}
+	}
+
+	.group{
+		&__pic{
+			align-items: center;
+			display: flex;
+			height: 11.5rem;
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 11rem;
+			z-index: 2;
+
+			img{
+				display: block;
+				margin-left: 4px;
+				margin-top: 4px;
+				max-width: 80px;
+			}
+			&:before,
+			&:after{
+				@extend .before;
+				border-radius: 50%;
+				height: 112px;
+				width: 112px;
+				z-index: -1;		
+			}
+
+			&:after{
+				background-color: $color2;
+				left: 0;
+				top: 0;
+			}
+
+			&:before{
+				background-color: #efefec;
+				left: 5px;
+				top: 5px;
+				transition: background-color .3s;
+			}
+		}
+	}
+
+	a{
+		font-size: 1.5rem;
+		text-align: center;
+		&:hover{
+			color: $color4;
+			text-decoration: none;
+			.group__pic{
+				&:before{
+					background-color: $color4;
+				}
+				&:after{
+					height: 103px;
+					left: 8px;
+					top: 8px;
+					width: 103px;
+				}
+			}
+		}
+	}
+	p{
+		margin-top: 1rem;
+		padding-left: .8rem;
+	}
+
+	.slick-dots{
+		display: flex;
+		justify-content: center;
+		margin-top: 4rem;
+		li{
+			margin: 0 .7rem;
+			&.slick-active{
+				button{
+					background-color: $color4;
+				}
+			}
+		}
+		button{
+			background-color: #808080;
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			display: block;
+			height: 10px;
+			text-indent: -999em;
+			padding: 0;
+			width: 10px;
+			transition: background-color .3s;
+			&:hover{
+				background-color: #000;
+			}
+		}
+	}
+}
+
+#groups-carousel2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	.wrapper{
+		height: 380px;
+	}
+	.slider{
+		&-left,
+		&-right{
+			// position: absolute;
+			z-index: 10;
+		}
+		&-left{
+			float: left;
+			left: 0;
+		}
+		&-right{
+			float: right;
+			right: 0;
+		}
+	}
+}
