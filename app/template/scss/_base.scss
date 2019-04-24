@@ -25,10 +25,26 @@ html {
 
 
 body{
+
 	@include font-size(1.4);
 	font-display: swap;
 	font-family: Avanti; 
 	// height: 100vh;
+}
+
+
+
+
+.header{
+	background: url(../images/bg-1.jpg) no-repeat center top;
+	background-size: cover;	
+	padding-bottom: 3.5rem;
+}
+
+.webp{
+	.header{
+		background-image: url(../images/bg-1.webp);
+	}
 }
 
 html, body{
@@ -187,6 +203,11 @@ em strong
 
 }
 
+.d-center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .btn{
 	align-items: center;
@@ -201,6 +222,11 @@ em strong
 	&:hover{
 		color: $color2;
 		text-decoration: none;
+	}
+
+	&-white{
+		color: $color6;
+		border: 1px solid;
 	}
 
 	&-gray{
@@ -247,7 +273,7 @@ em strong
 	cursor: pointer;
 	padding: 0;
 	&:hover{
-		border-bottom: none;
+		border-bottom-color: rgba(0,0,0,0);
 	}
 }
 
@@ -295,6 +321,14 @@ em strong
 }
 
 
+.tab-content {
+	> .tab-pane {
+		display: none;
+	}
+	> .active {
+		display: block;
+	}
+}
 
 .visually-hidden{
 	position: absolute;
@@ -303,3 +337,11 @@ em strong
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
+
+
+
+.center-block{
+	margin-left: auto;
+	margin-right: auto;
+}
+

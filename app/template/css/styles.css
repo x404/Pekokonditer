@@ -309,6 +309,16 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.rur {
+  font-family: als_rublregular;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
@@ -3305,6 +3315,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: auto;
   margin-left: auto; }
 
+[class*="grid-"] {
+  grid-row-gap: 30px;
+  grid-column-gap: 30px; }
+
 @media (max-width: 767px) {
   .container {
     padding-left: 15px;
@@ -3322,9 +3336,153 @@ a.text-dark:hover, a.text-dark:focus {
   .container {
     width: 1100px; } }
 
+@media (min-width: 1250px) {
+  .grid-xl-6 {
+    grid-template-columns: repeat(6, 1fr); } }
+
 @media (min-width: 1400px) {
   .container {
     width: 1260px; } }
+
+.grid-1 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr); }
+
+.grid-7 {
+  grid-template-columns: repeat(7, 1fr); }
+
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr); }
+
+.grid-9 {
+  grid-template-columns: repeat(9, 1fr); }
+
+.grid-10 {
+  grid-template-columns: repeat(10, 1fr); }
+
+.grid-11 {
+  grid-template-columns: repeat(11, 1fr); }
+
+.grid-12 {
+  grid-template-columns: repeat(12, 1fr); }
+
+@media (min-width: 576px) {
+  .grid-sm-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-sm-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-sm-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-sm-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-sm-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-sm-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-sm-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-sm-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-sm-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-sm-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-sm-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 768px) {
+  .grid-md-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-md-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-md-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-md-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-md-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-md-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-md-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-md-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-md-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-md-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-md-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-md-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 992px) {
+  .grid-lg-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-lg-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-lg-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-lg-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-lg-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-lg-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-lg-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-lg-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-lg-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-lg-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-lg-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-lg-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 1250px) {
+  .grid-xl-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-xl-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-xl-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-xl-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-xl-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-xl-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-xl-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-xl-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-xl-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-xl-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-xl-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-xl-12 {
+    grid-template-columns: repeat(12, 1fr); } }
 
 /*---------------------------------------------------
     SCSS Elements 0.1
@@ -3385,6 +3543,14 @@ body {
   font-size: 1.4rem;
   font-display: swap;
   font-family: Avanti; }
+
+.header {
+  background: url(../images/bg-1.jpg) no-repeat center top;
+  background-size: cover;
+  padding-bottom: 3.5rem; }
+
+.webp .header {
+  background-image: url(../images/bg-1.webp); }
 
 html, body {
   height: 100%; }
@@ -3493,10 +3659,14 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after {
+.before, .underline:after, .homepage .goods .container:before, .homepage .wrapper-more:before {
   content: "";
   display: block;
   position: absolute; }
+
+.d-center {
+  margin-left: auto;
+  margin-right: auto; }
 
 .btn {
   align-items: center;
@@ -3510,6 +3680,9 @@ em strong {
   .btn:hover {
     color: #fff;
     text-decoration: none; }
+  .btn-white {
+    color: #808080;
+    border: 1px solid; }
   .btn-gray {
     background-color: #808081;
     color: #fff; }
@@ -3545,7 +3718,7 @@ em strong {
   cursor: pointer;
   padding: 0; }
   .btn-str:hover {
-    border-bottom: none; }
+    border-bottom-color: rgba(0, 0, 0, 0); }
 
 .btn-order-callback {
   color: #f05525; }
@@ -3574,12 +3747,22 @@ em strong {
 ---------------------------*/
 /* =main
 ---------------------------*/
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto; }
 
 @font-face {
   font-family: 'Avanti';
@@ -3593,12 +3776,100 @@ em strong {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.rur {
+  font-family: als_rublregular;
+  font-style: normal; }
+
 .intro {
   margin-top: 5rem; }
   .intro .title {
     margin-bottom: 4rem; }
   .intro img {
     max-width: 100%; }
+
+.line, .homepage .goods .container:before, .homepage .wrapper-more:before {
+  border-top: 1px solid #eee;
+  left: 50%;
+  margin-left: -120px;
+  width: 240px; }
+
+.homepage .goods {
+  margin-top: 7.5rem; }
+  .homepage .goods .container {
+    position: relative; }
+    .homepage .goods .container:before {
+      top: -30px; }
+
+.homepage .wrapper-more {
+  margin-top: 3rem;
+  position: relative; }
+  .homepage .wrapper-more:before {
+    top: -30px; }
+
+.goods .nav li {
+  margin: 0 1.7rem; }
+
+.goods .nav .btn.active {
+  background-color: #f05525;
+  color: #fff;
+  border-color: #fff; }
+
+.goods .tab-content {
+  margin-top: 3rem; }
+
+.goods .d-grid {
+  grid-row-gap: 40px;
+  grid-column-gap: 40px; }
+
+.goods .product__item {
+  position: relative; }
+  .goods .product__item .btn {
+    font-size: 1.4rem;
+    height: 40px;
+    width: 110px; }
+  .goods .product__item .label {
+    align-items: center;
+    background-color: #f05525;
+    border-radius: 2rem 2rem 2rem 0;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 120px; }
+
+.goods .product__pic {
+  background-color: #f7f6f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 272px;
+  width: 272px; }
+
+.goods .product__title {
+  font-size: 1.6rem;
+  margin: 1.8rem 0;
+  text-align: center; }
+
+.goods .product__price {
+  font-size: 3rem;
+  color: #f05525;
+  text-align: center; }
+  .goods .product__price span {
+    color: #262626;
+    font-size: 1.8rem; }
+
+.radius-2 {
+  border-radius: 2rem 2rem 0 0; }
 
 /* =mobile-menu
 ---------------------------*/
