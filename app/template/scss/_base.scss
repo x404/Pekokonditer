@@ -38,7 +38,7 @@ body{
 .header{
 	background: url(../images/bg-1.jpg) no-repeat center top;
 	background-size: cover;	
-	padding-bottom: 3.5rem;
+	padding-bottom: 4.2rem;
 }
 
 .webp{
@@ -127,7 +127,7 @@ h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
 p{
-	line-height: 2;
+	line-height: 1.8;
 	a{
 		color: $color4;
 		border-bottom: 1px dashed rgba(0,0,0,0);
@@ -246,9 +246,22 @@ em strong
 /* =header
 ---------------------------*/
 .header{
-	padding-top: 5rem;
+	padding-top: 4.2rem;
 	.tel{
 		font-size: 3rem;
+	}
+	&__left{
+		padding-top: 4rem;
+		p{
+			line-height: 1;			
+		}
+	}
+	.btn-order-callback{
+		line-height: 1.2;
+		margin-top: .5rem;
+	}
+	&__right{
+		padding-top: 2rem;
 	}
 }
 
@@ -289,7 +302,7 @@ em strong
 /* =navigation
 ---------------------------*/
 .navmenu{
-	margin-top: 4rem;
+	margin-top: 5rem;
 	.nav{
 		display: flex;
 		justify-content: center;

@@ -3547,7 +3547,7 @@ body {
 .header {
   background: url(../images/bg-1.jpg) no-repeat center top;
   background-size: cover;
-  padding-bottom: 3.5rem; }
+  padding-bottom: 4.2rem; }
 
 .webp .header {
   background-image: url(../images/bg-1.webp); }
@@ -3611,7 +3611,7 @@ h3 {
   font-size: 1.6rem; }
 
 p {
-  line-height: 2; }
+  line-height: 1.8; }
   p a {
     color: #f05525;
     border-bottom: 1px dashed rgba(0, 0, 0, 0); }
@@ -3692,9 +3692,18 @@ em strong {
 /* =header
 ---------------------------*/
 .header {
-  padding-top: 5rem; }
+  padding-top: 4.2rem; }
   .header .tel {
     font-size: 3rem; }
+  .header__left {
+    padding-top: 4rem; }
+    .header__left p {
+      line-height: 1; }
+  .header .btn-order-callback {
+    line-height: 1.2;
+    margin-top: .5rem; }
+  .header__right {
+    padding-top: 2rem; }
 
 .btn-icon {
   background-color: transparent;
@@ -3728,7 +3737,7 @@ em strong {
 /* =navigation
 ---------------------------*/
 .navmenu {
-  margin-top: 4rem; }
+  margin-top: 5rem; }
   .navmenu .nav {
     display: flex;
     justify-content: center;
@@ -3807,10 +3816,12 @@ em strong {
       top: -30px; }
 
 .homepage .wrapper-more {
-  margin-top: 3rem;
+  margin-top: 6.5rem;
   position: relative; }
   .homepage .wrapper-more:before {
     top: -30px; }
+  .homepage .wrapper-more .btn {
+    margin-top: 0; }
 
 .goods .nav li {
   margin: 0 1.7rem; }
@@ -3861,8 +3872,9 @@ em strong {
   text-align: center; }
 
 .goods .product__price {
-  font-size: 3rem;
   color: #f05525;
+  font-size: 3rem;
+  line-height: 1;
   text-align: center; }
   .goods .product__price span {
     color: #262626;

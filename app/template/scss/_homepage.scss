@@ -32,12 +32,15 @@
 	}
 
 	.wrapper-more{
-		margin-top: 3rem;
+		margin-top: 6.5rem;
 		position: relative;
 		&:before{
 			@extend .before;
 			@extend .line;
 			top: -30px;
+		}
+		.btn{
+			margin-top: 0;
 		}
 	}
 }
@@ -102,8 +105,9 @@
 		}
 
 		&__price{
-			font-size: 3rem;
 			color: $color4;
+			font-size: 3rem;
+			line-height: 1;
 			text-align: center;
 			span{
 				color: $color3;
