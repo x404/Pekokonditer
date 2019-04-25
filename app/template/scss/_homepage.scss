@@ -6,6 +6,8 @@
 	font-weight: 500;
 	.slick-arrow{
 		filter: grayscale(1) brightness(5) invert(1);
+		opacity: 0;
+		transition: .3s
 	}
 
 	.slick-prev{
@@ -23,6 +25,13 @@
 	}
 }
 
+#home-carousel{
+	&:hover{
+		.slick-arrow{
+			opacity: 1;
+		}
+	}
+}
 
 .orange{
 	color: $color4;
