@@ -1,5 +1,36 @@
+.homeslider{
+	background: url(../images/mainslide-bg.jpg) no-repeat center top;
+	background-size: cover;
+	min-height: 633px;
+	font-size: 4.8rem;
+	font-weight: 500;
+	.slick-arrow{
+		filter: grayscale(1) brightness(5) invert(1);
+	}
+
+	.slick-prev{
+		transform: none;
+	}
+
+	.pic{
+		margin: 4rem 0 6rem;
+	}
+}
+
+.webp{
+	.homeslider{
+		background-image: url(../images/mainslide-bg.webp);
+	}
+}
+
+
+.orange{
+	color: $color4;
+}
+
 .intro{
 	margin-top: 5rem;
+	padding-top: 3rem;
 	.title{
 		margin-bottom: 4rem;
 	}
@@ -20,19 +51,20 @@
 
 .topline{
 	position: relative;
+	padding-top: 2rem;
 	&:before{
 		@extend .before;
 		border-top: 1px solid $color8;
 		left: 50%;
 		margin-left: -120px;
-		width: 240px;
 		top: 0;		
+		width: 240px;
 	}
 }
 
 .homepage{
 	.goods{
-		margin-top: 7.5rem;
+		margin-top: 5rem;
 		.container{
 			position: relative;
 			&:before{
@@ -59,8 +91,12 @@
 
 .goods{
 	.nav{
+		margin-top: 3.5rem;
 		li{
 			margin: 0 1.7rem
+		}
+		.btn{
+			margin-top: 0;
 		}
 		.btn.active{
 			background-color: $color4;

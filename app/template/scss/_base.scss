@@ -237,6 +237,8 @@ em strong
 		&-orange{
 			&:hover{
 				background-color: $color4;
+				color: $color2;
+				text-decoration: none;
 			}
 		}
 	}

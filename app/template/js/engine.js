@@ -71,7 +71,6 @@ $(document).ready(function(){
 		arrows: false,
 		slidesToScroll: 1,
 		dots: true,
-		focusOnSelect: true,
 		infinite: false,
 		responsive: [
 			{
@@ -118,6 +117,85 @@ $(document).ready(function(){
 			}
 		]
 	});
+
+
+	$('#blog-carousel').slick({
+		slidesToShow: 3,
+		arrows: true,
+		slidesToScroll: 1,
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		dots: false,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+
+
+	$('#home-carousel').slick({
+		slidesToShow: 1,
+		arrows: true,
+		slidesToScroll: 1,
+		prevArrow:`
+			<button class="slick-arrow slick-prev" aria-label="Назад" type="button">
+				<svg width="26" height="31">
+					<polygon points="2,13 22,2 22,24" fill="transparent" stroke="#f05525" stroke-width="3" />
+				</svg>
+			</button>`,
+		nextArrow:`<button class="slick-arrow slick-next" aria-label="Вперед" type="button">
+				<svg width="26" height="31">
+					<polygon points="2,2 22,13 2,24" fill="transparent" stroke="#f05525" stroke-width="3" />
+				</svg>
+		</button>`,
+		dots: false,
+		fade: true
+	});
+
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),
