@@ -3659,7 +3659,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after {
+.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3775,6 +3775,79 @@ em strong {
   margin-left: auto;
   margin-right: auto; }
 
+/* =footer
+---------------------------*/
+.footer {
+  background: url(../images/footer-bg.jpg) no-repeat center top;
+  background-size: cover;
+  padding-top: 4rem;
+  line-height: 2.2; }
+  .footer .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase; }
+  .footer .column .wrapper {
+    border-left: 1px solid #d3d3d3; }
+  .footer .column:first-child .wrapper {
+    border-left: none;
+    padding-left: 0; }
+  .footer .column .wrapper {
+    padding: 0 3rem; }
+  .footer .column a {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+    .footer .column a:hover {
+      color: #f05525;
+      border-bottom-color: #f05525;
+      text-decoration: none; }
+  .footer .menu-products li {
+    width: 50%; }
+  .footer a.dashed {
+    color: #f05525;
+    border-bottom: 1px dashed #f05525; }
+    .footer a.dashed:hover {
+      border-bottom-color: rgba(0, 0, 0, 0); }
+  .footer .bottom {
+    border-top: 1px solid #d3d3d3;
+    margin-top: 2.5rem;
+    padding-bottom: 1.5rem; }
+  .footer .social a {
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 38px; }
+    .footer .social a:last-child {
+      margin-right: 0; }
+    .footer .social a:hover {
+      border: none;
+      background-color: #f05525; }
+      .footer .social a:hover img {
+        filter: brightness(5); }
+  .footer .copyright,
+  .footer .creators {
+    padding-top: 1.5rem; }
+  .footer .shadow {
+    position: relative; }
+    .footer .shadow:before {
+      background: url(../images/shadow.png) no-repeat left top;
+      height: 28px;
+      width: 495px;
+      top: 0; }
+    .footer .shadow-right:before {
+      background-position: left top;
+      transform: scaleX(-1);
+      left: -250px; }
+
+.webp .footer {
+  background-image: url(../images/footer-bg.webp); }
+
+/* =/footer
+---------------------------*/
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("/template/fonts/Avanti/Avanti.woff2") format("woff2"), url("/template/fonts/Avanti/Avanti.woff") format("woff");
@@ -3924,13 +3997,17 @@ em strong {
   padding: 5rem 0;
   position: relative; }
 
+#groups-carousel,
+#producers-carousel {
+  display: flex; }
+  #groups-carousel.slick-initialized,
+  #producers-carousel.slick-initialized {
+    display: block; }
+
 #groups-carousel {
-  display: flex;
   margin-top: 3.5rem;
   position: relative;
   z-index: 2; }
-  #groups-carousel.slick-initialized {
-    display: block; }
   #groups-carousel .slick-current .group__pic:before {
     background-color: #f05525; }
   #groups-carousel .slick-current .group__pic:after {
@@ -4075,6 +4152,27 @@ em strong {
     background-position: left bottom;
     opacity: 0;
     transition: opacity .3s; }
+
+.producers {
+  margin-top: 4rem;
+  padding-bottom: 3rem; }
+  .producers h1 {
+    padding-top: 1rem; }
+
+#producers-carousel {
+  margin-top: 4.5rem; }
+  #producers-carousel .slick-slide {
+    text-align: center; }
+  #producers-carousel a {
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    display: inline-flex;
+    height: 100px;
+    justify-content: center;
+    border-radius: 1.8rem;
+    padding: 0 1.5rem; }
+    #producers-carousel a:hover {
+      border-color: #f05525; }
 
 /* =mobile-menu
 ---------------------------*/

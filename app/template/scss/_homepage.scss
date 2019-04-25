@@ -177,14 +177,19 @@
 	position: relative;
 }
 
-#groups-carousel{
+#groups-carousel,
+#producers-carousel
+{
 	display: flex;
-	margin-top: 3.5rem;
-	position: relative;
-	z-index: 2;
 	&.slick-initialized{
 		display: block;
 	}
+}
+
+#groups-carousel{
+	margin-top: 3.5rem;
+	position: relative;
+	z-index: 2;
 
 	.slick-current{
 		.group__pic{
@@ -392,3 +397,31 @@
 	}
 }
 // =/aboutus
+
+
+.producers{
+	margin-top: 4rem;
+	padding-bottom: 3rem;
+	h1{
+		padding-top: 1rem;
+	}
+}
+
+#producers-carousel{
+	margin-top: 4.5rem;
+	.slick-slide{
+		text-align: center;
+	}
+	a{
+		align-items: center;
+		border: 2px solid rgba(0,0,0,0);
+		display: inline-flex;
+		height: 100px;
+		justify-content: center;
+		border-radius: 1.8rem;
+		padding: 0 1.5rem;
+		&:hover{
+			border-color: $color4
+		}
+	}
+}
