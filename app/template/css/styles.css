@@ -3659,7 +3659,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after {
+.before, .underline:after, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3808,6 +3808,15 @@ em strong {
   margin-left: -120px;
   width: 240px; }
 
+.topline {
+  position: relative; }
+  .topline:before {
+    border-top: 1px solid #eee;
+    left: 50%;
+    margin-left: -120px;
+    width: 240px;
+    top: 0; }
+
 .homepage .goods {
   margin-top: 7.5rem; }
   .homepage .goods .container {
@@ -3948,27 +3957,28 @@ em strong {
   #groups-carousel p {
     margin-top: 1rem;
     padding-left: .8rem; }
-  #groups-carousel .slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem; }
-    #groups-carousel .slick-dots li {
-      margin: 0 .7rem; }
-      #groups-carousel .slick-dots li.slick-active button {
-        background-color: #f05525; }
-    #groups-carousel .slick-dots button {
-      background-color: #808080;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      display: block;
-      height: 10px;
-      text-indent: -999em;
-      padding: 0;
-      width: 10px;
-      transition: background-color .3s; }
-      #groups-carousel .slick-dots button:hover {
-        background-color: #000; }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem; }
+  .slick-dots li {
+    margin: 0 .7rem; }
+    .slick-dots li.slick-active button {
+      background-color: #f05525; }
+  .slick-dots button {
+    background-color: #808080;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    text-indent: -999em;
+    padding: 0;
+    width: 10px;
+    transition: background-color .3s; }
+    .slick-dots button:hover {
+      background-color: #000; }
 
 #groups-carousel2 {
   position: absolute;
@@ -3987,6 +3997,58 @@ em strong {
   #groups-carousel2 .slider-right {
     float: right;
     right: 0; }
+
+.aboutus {
+  padding: 3rem 0; }
+  .aboutus #aboutus-carousel {
+    margin-top: 3.5rem; }
+
+.review__link {
+  display: block;
+  position: relative;
+  width: 98%; }
+  .review__link:hover {
+    color: #000;
+    text-decoration: none; }
+    .review__link:hover .review__text:after {
+      opacity: 1; }
+
+.review__meta {
+  min-height: 5.5rem;
+  padding-left: 185px;
+  padding-top: .9rem; }
+
+.review__name {
+  font-weight: bold; }
+
+.review__pic {
+  left: 48px;
+  position: absolute;
+  top: 0;
+  z-index: 10; }
+  .review__pic img {
+    border: 3px solid #fff;
+    border-radius: 1.5rem;
+    display: block; }
+
+.review__text {
+  background-color: #f7f6f2;
+  border-radius: 1.5rem;
+  height: 15rem;
+  padding: 4rem 1.8rem 2rem 17.8rem;
+  position: relative; }
+  .review__text:before, .review__text:after {
+    background: url(../images/quote.png) no-repeat left top;
+    font-size: 15rem;
+    height: 40px;
+    left: 82px;
+    line-height: 1;
+    top: 85px;
+    width: 51px; }
+  .review__text:after {
+    background-position: left bottom;
+    opacity: 0;
+    transition: opacity .3s; }
 
 /* =mobile-menu
 ---------------------------*/
