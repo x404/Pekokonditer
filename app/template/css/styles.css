@@ -4113,6 +4113,11 @@ em strong {
     font-size: 1.4rem;
     height: 40px;
     width: 110px; }
+  .goods .product__item .labels {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   .goods .product__item .label {
     align-items: center;
     background-color: #f05525;
@@ -4122,10 +4127,12 @@ em strong {
     display: flex;
     height: 40px;
     justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 120px; }
+    width: 120px;
+    position: absolute; }
+    .goods .product__item .label:nth-child(2) {
+      border-radius: 2rem 2rem 0 2rem;
+      right: 0;
+      left: auto; }
 
 .goods .product__pic {
   background-color: #f7f6f2;
