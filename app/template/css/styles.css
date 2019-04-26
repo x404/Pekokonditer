@@ -3747,16 +3747,52 @@ em strong {
   .navmenu .nav {
     display: flex;
     justify-content: center;
-    font-size: 1.6rem; }
-    .navmenu .nav li {
+    font-size: 1.6rem;
+    position: relative; }
+    .navmenu .nav > li {
       margin: 0 .6rem; }
-    .navmenu .nav a {
-      border-radius: 4rem;
-      padding: 1rem 2rem; }
-      .navmenu .nav a:hover {
+      .navmenu .nav > li > a {
+        border-radius: 4rem;
+        padding: 1rem 2rem; }
+        .navmenu .nav > li > a:hover {
+          background-color: #f05525;
+          color: #fff;
+          text-decoration: none; }
+      .navmenu .nav > li:hover > a {
         background-color: #f05525;
         color: #fff;
         text-decoration: none; }
+      .navmenu .nav > li.folder:hover .subnav {
+        opacity: 1;
+        z-index: 100; }
+  .navmenu .subnav {
+    font-size: 1.5rem;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    transition: .3s;
+    width: 100%;
+    z-index: -10; }
+    .navmenu .subnav .wrapper {
+      background: #666;
+      border-radius: 1rem;
+      margin: 0.8rem auto 0;
+      padding: 1.2rem 1.8rem;
+      width: 1160px; }
+    .navmenu .subnav ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .navmenu .subnav ul li {
+        margin: .2rem 0;
+        width: 16.6%; }
+    .navmenu .subnav a {
+      color: #fff;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+      .navmenu .subnav a:hover {
+        border-bottom-color: #fff;
+        text-decoration: none;
+        cursor: pointer; }
 
 /* =/navigation
 ---------------------------*/
