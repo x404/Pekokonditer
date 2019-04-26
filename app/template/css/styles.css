@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3671,12 +3672,15 @@ em strong {
 .btn {
   align-items: center;
   border-radius: 46px;
+  border: none;
+  cursor: pointer;
   display: flex;
   font-size: 1.5rem;
   height: 46px;
   justify-content: center;
   margin-top: 2.5rem;
-  width: 190px; }
+  width: 190px;
+  transition: .3s; }
   .btn:hover {
     color: #fff;
     text-decoration: none; }
@@ -3848,6 +3852,122 @@ em strong {
 
 /* =/footer
 ---------------------------*/
+#callback {
+  padding-right: 0 !important; }
+  #callback .modal-dialog {
+    max-width: 100% !important;
+    width: 100% !important; }
+  #callback .form-control {
+    border: none;
+    border-radius: 3rem;
+    display: block;
+    height: 3rem;
+    text-align: center;
+    width: 100%; }
+
+.modal-dialog .modal-content {
+  background: #ececec; }
+
+.modal-dialog .modal__body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  padding: 3rem 0;
+  width: 100%; }
+
+.modal-dialog .title {
+  font-size: 3rem;
+  text-align: center; }
+
+.modal-dialog .form-control {
+  font-size: 1.8rem;
+  margin-top: 1.8rem; }
+
+.dashed {
+  text-decoration: none;
+  color: #f05525;
+  border-bottom: 1px dashed #f05525; }
+  .dashed:hover {
+    border-bottom-color: rgba(0, 0, 0, 0);
+    color: #f05525;
+    text-decoration: none; }
+
+.modal .close-modal {
+  background: #f05525;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -23px;
+  position: absolute;
+  top: -20px;
+  width: 46px; }
+  .modal .close-modal line {
+    stroke-width: 4px;
+    stroke: #fff; }
+  .modal .close-modal svg {
+    transition: transform .3s; }
+  .modal .close-modal:hover svg {
+    transform: rotate(45deg); }
+
+.modal .form-control:disabled {
+  background-color: #e0dbdb; }
+
+.modal .submit {
+  height: 3rem; }
+  .modal .submit:disabled {
+    background-color: #ccc;
+    cursor: default; }
+
+.modal .policy {
+  margin-top: 2.8rem; }
+
+.user-access + label {
+  cursor: pointer;
+  color: #262626; }
+
+.user-access:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.user-access:not(checked) + label {
+  display: block;
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px;
+  /* оставляем слева от label место под псевдочекбокс */ }
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.user-access:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 46px;
+  height: 30px;
+  border: 1px solid #f05525;
+  background-color: #f05525;
+  border-radius: 30px; }
+
+/* Меняем фон чекбокса, когда он включен. */
+.user-access:checked + label:before {
+  border-color: #f05525; }
+
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.user-access:checked + label:after {
+  content: '*';
+  color: #fff;
+  position: absolute;
+  font-style: normal;
+  top: -8px;
+  left: 15px;
+  width: 22px;
+  height: 22px;
+  font-size: 3.6rem;
+  border-radius: 3px; }
+
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("/template/fonts/Avanti/Avanti.woff2") format("woff2"), url("/template/fonts/Avanti/Avanti.woff") format("woff");

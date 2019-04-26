@@ -42,7 +42,7 @@
 			<div class="d-flex justify-content-between align-items-center">
 				<div class="header__left text-right">
 					<p class="tel">+7 (967) 1220403</p>
-					<button type="button" class="btn-str btn-order-callback">заказать звонок</button>
+					<button type="button" class="btn-str btn-order-callback" data-toggle="modal" data-target="#callback">заказать звонок</button>
 				</div>
 				<div class="logo">
 					<a href="/" title=""><img src="/template/images/logo.png" alt=""></a>
@@ -841,6 +841,40 @@
 		</div>
 	</footer>
 	<!-- =/footer -->	
+</div>
+
+
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal__body">
+				<p class="title">ФОРМА ЗАКАЗА ЗВОНКА</p>			
+						    			
+			    <form action="#" method="post" class="form-policy" id="callback-form">
+					<fieldset>
+						<label for="cbname" class="visually-hidden">как вас зовут ?</label>
+						<input type="text" id="cbname" name="name" class="form-control required" value="" placeholder="как вас зовут ?" tabindex="11" autofocus /><span class="error"></span>
+			
+						<label for="cbtel" class="visually-hidden">телефон</label>
+						<input type="tel" id="cbtel" name="tel" class="tel form-control required" value="" placeholder="телефон" tabindex="12" /><span class="error"></span>
+						
+						<input type="hidden" name="workemail" value="">
+						<input type="submit" name="callback_submit" class="submit btn btn-gray btn-hover-orange center-block" tabindex="13" value="заказать звонок" />
+						<div class="policy">
+							<input type="checkbox" id="cbcheckbox" value="" name="checkbox" checked="checked" class="user-access" tabindex="14">
+							<label for="cbcheckbox">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" class="dashed" target="_blank">Пользовательского соглашения</a></label>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
+				<svg width="14" height="14">
+					<line x1="0" y1="0" x2="14" y2="14"></line>
+					<line x1="14" y1="0" x2="0" y2="14"></line>
+				</svg>
+			</button>
+		</div>
+	</div>
 </div>
 
 <div id="outdated"></div>
