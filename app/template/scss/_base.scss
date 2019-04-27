@@ -133,24 +133,24 @@ input::-moz-focus-inner{
 	}
 
 
-	@media (min-width: 992px){
-		.grid-lg-2{
-			grid-template-columns: repeat(2, 1fr);
-			grid-row-gap: 30px;
-		}	
-		.grid-lg-3{
-			grid-template-columns: repeat(3, 1fr);
-			grid-row-gap: 30px;
-		}		
-		.d-lg-grid{
-			display: grid !important;
-		}
-	}
-	@media (min-width: 1250px){
-		.grid-xl-6{
-			grid-template-columns: repeat(6, 1fr)
-		}		
-	}
+	// @media (min-width: 992px){
+	// 	.grid-lg-2{
+	// 		grid-template-columns: repeat(2, 1fr);
+	// 		grid-row-gap: 30px;
+	// 	}	
+	// 	.grid-lg-3{
+	// 		grid-template-columns: repeat(3, 1fr);
+	// 		grid-row-gap: 30px;
+	// 	}		
+	// 	.d-lg-grid{
+	// 		display: grid !important;
+	// 	}
+	// }
+	// @media (min-width: 1250px){
+	// 	.grid-xl-6{
+	// 		grid-template-columns: repeat(6, 1fr)
+	// 	}		
+	// }
 }
 
 
@@ -520,6 +520,7 @@ em strong
 	.bottom{
 		border-top: 1px solid #d3d3d3;
 		margin-top: 2.5rem;
+		position: relative;
 	}
 
 	.social{
@@ -532,6 +533,7 @@ em strong
 			height: 38px;
 			justify-content: center;
 			margin-right: 1rem;
+			margin-bottom: 1rem;
 			width: 38px;
 			&:last-child{
 				margin-right: 0;
@@ -561,14 +563,14 @@ em strong
 			@extend .before;
 			background: url(../images/shadow.png) no-repeat left top;
 			height: 28px;
-			width: 495px;
 			top: 0;
+			width: 495px;
 		}
 		&-right{
 			&:before{
 				background-position: left top;
-				transform: scaleX(-1);
 				left: -250px;
+				transform: scaleX(-1);
 			}
 		}		
 	}
@@ -587,6 +589,7 @@ em strong
 .creators-wrapper{
 	position: absolute;
 	bottom: 0;
+	right: 0;
 	a{
 		align-items: center;
 		background-color: $color2;

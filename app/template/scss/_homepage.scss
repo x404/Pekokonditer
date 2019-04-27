@@ -31,6 +31,9 @@
 			opacity: 1;
 		}
 	}
+	.slick-slide img{
+		max-width: 100%;
+	}
 }
 
 .orange{
@@ -121,11 +124,13 @@
 	.d-grid{
 		grid-row-gap: 40px;
 		grid-column-gap: 40px;
+
 	}
 
 	.product{
 		&__item{
 			position: relative;
+			max-width: 272px;
 			.btn{
 				font-size: 1.4rem;
 				height: 40px;
@@ -163,7 +168,7 @@
 			justify-content: center;
 			align-items: center;
 			height: 272px;
-			width: 272px;
+			max-width: 272px;
 		}
 		&__title{
 			font-size: 1.6rem;

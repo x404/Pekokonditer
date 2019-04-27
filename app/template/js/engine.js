@@ -22,43 +22,31 @@ $(document).ready(function(){
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
+					slidesToShow: 6
 				}
 			},
 			{
-				breakpoint: 1250,
+				breakpoint: 1300,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToShow: 5
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 4
 				}
 			},
 			{
-				breakpoint: 991,
+				breakpoint: 850,
 				settings: {
-					slidesToShow: 5,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToShow: 3
 				}
 			},
 			{
 				breakpoint: 450,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 2
 				}
 			}
 		]
@@ -74,45 +62,15 @@ $(document).ready(function(){
 		infinite: false,
 		responsive: [
 			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 1250,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToShow: 2
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 5,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 1
 				}
 			}
 		]
@@ -131,45 +89,77 @@ $(document).ready(function(){
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 1250,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '150px',
+					arrows: false
 				}
 			},
 			{
-				breakpoint: 991,
+				breakpoint: 767,
 				settings: {
-					slidesToShow: 5,
-					slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '150px',
+					arrows: false
 				}
 			},
 			{
-				breakpoint: 768,
+				breakpoint: 700,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '100px',
+					arrows: false
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 600,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '70px',
+					arrows: false
 				}
-			}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '20px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 460,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '10px',
+					arrows: false
+				}
+			},
 		]
 	});
 
@@ -204,30 +194,16 @@ $(document).ready(function(){
 		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
 		responsive: [
 			{
-				breakpoint: 1400,
+				breakpoint: 1250,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 1250,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 991,
 				settings: {
-					slidesToShow: 5,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
@@ -239,10 +215,11 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 450,
+				breakpoint: 550,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					arrows: false
 				}
 			}
 		]

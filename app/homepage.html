@@ -39,32 +39,28 @@
 	<!-- =header -->
 	<header class="header">
 		<div class="container">
-			<div class="d-flex justify-content-between align-items-center">
-				<div class="header__left text-right">
+			<div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+				<div class="header__left text-right order-3 order-md-1">
 					<p class="tel">+7 (967) 1220403</p>
 					<button type="button" class="btn-str btn-order-callback" data-toggle="modal" data-target="#callback">заказать звонок</button>
 				</div>
-				<div class="logo">
+				<div class="logo order-2">
 					<a href="/" title=""><img src="/template/images/logo.png" alt=""></a>
 				</div>
-				<div class="header__right">
+				<div class="header__right order-4 order-md-3">
 					<button type="button" class="btn-search btn-icon" aria-label="Поиск"></button>
-
-
-<form class="sisea-search-form" action="rezultatyi-poiska.html" method="get">
-	<fieldset>
-		<div class="d-flex align-items-center">
-			<label>
-				<span class="visually-hidden">поиск по сайту</span>
-				<input class="form-control" type="text" name="search" id="search" value="" placeholder="поиск по сайту">
-			</label>
-			<input type="hidden" name="id" value="35">
-			<button type="submit" class="submit" aria-label="найти"></button>			
-		</div>
-	</fieldset>
-</form>
-
-
+					<form class="sisea-search-form" action="rezultatyi-poiska.html" method="get">
+						<fieldset>
+							<div class="d-flex align-items-center">
+								<label>
+									<span class="visually-hidden">поиск по сайту</span>
+									<input class="form-control" type="text" name="search" id="search" value="" placeholder="поиск по сайту">
+								</label>
+								<input type="hidden" name="id" value="35">
+								<button type="submit" class="submit" aria-label="найти"></button>			
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</div>			
 		</div>
@@ -189,14 +185,14 @@
 	<section class="intro">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-7 col-xs-12 order-2 order-xs-1">
 					<h1 class="title ucase">добро пожаловать <br>на сайт компании <span class="underline">пекокондитер</span> </h1>
 
 					<p>Компания ООО «ПЕКО Логистик» работает в ОРПЦ «ФУД СИТИ» с 2014 года. В нашем ассортименте можно найти кондитерские изделия, чай и кофе. Мы работаем с производителями как из Москвы и области, так и с другими регионами России. Так же обеды быстрого приготовления (Ролтон, Доширак), <a href="#">чипсы</a> и различные снеки, семечки. В продаже имеется широкий ассортимент <a href="#" title="">чая</a> и <a href="#" title="">кофе</a> всех известных отечественных и импортных производителей. Будем рады новым покупателям.</p>
 
 					<a href="#" class="btn btn-gray btn-hover-orange more">подробнее</a>
 				</div>
-				<div class="col-lg-6 col-md-12">
+				<div class="col-lg-6 col-md-5 col-xs-12 d-none d-sm-block order-1 order-xs-2">
 					<img src="images/intro.jpg" alt="">
 				</div>
 			</div>
@@ -210,7 +206,7 @@
 		<div class="container">
 			<p>В интернет-магазине «ПекоКондитер» продаются конфеты прямо с фабрики, акции и скидки на них в основном имеют праздничный характер, или же ставят своей целью познакомить потребителя с чем-то особенным. Кроме того, ассортимент магазина настолько разнообразен и велик, что у многих сладкоежек разбегаются глаза. Акции помогают обратить внимание на что-то сезонное, новое или же давно забытое старое, чтобы не потеряться в огромном разнообразии кондитерских изделий.</p>
 
-			<ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+			<ul class="nav nav-tabs d-flex flex-wrap justify-content-center" role="tablist">
 				<li role="presentation"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange active">эксклюзив</a></li>
 				<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange">новинки</a></li>
 				<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange">популярное</a></li>
@@ -218,7 +214,7 @@
 			</ul>
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane fade show active" id="tab1">
-					<div class="d-grid grid-lg-4">
+					<div class="d-grid grid-xl-4 grid-lg-3 grid-md-2">
 
 						<div class="product__item">
 							<div class="product__pic radius-2">
@@ -847,7 +843,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="top row">
-				<div class="column col-lg-3">
+				<div class="column col-lg-3 footer__contacts">
 					<div class="wrapper">
 						<p class="title">связаться с нами</p>
 						<div>
@@ -861,7 +857,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column col-lg-3">
+				<div class="column col-lg-3 col-md-6 d-none d-md-block">
 					<div class="wrapper">
 						<p class="title">о магазине</p>
 						<div class="d-flex justify-content-between">
@@ -882,7 +878,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column col-lg-3">
+				<div class="column col-lg-3 col-md-6 d-none d-md-block">
 					<div class="wrapper">
 						<p class="title">продукция</p>
 						<ul class="menu-products d-flex justify-content-between flex-wrap">
@@ -906,10 +902,10 @@
 						</ul>
 					</div>
 				</div>
-				<div class="column col-lg-3">
+				<div class="column col-12 col-lg-3">
 					<div class="wrapper">
 						<p class="title">мы в соцсетях</p>
-						<div class="social d-flex">
+						<div class="social d-flex flex-wrap">
 							<a href="#" title="" target="_blank"><img src="/template/images/icons/vk.png" alt=""></a>
 							<a href="#" title="" target="_blank"><img src="/template/images/icons/fb.png" alt=""></a>
 							<a href="#" title="" target="_blank"><img src="/template/images/icons/tw.png" alt=""></a>
@@ -919,7 +915,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="bottom d-flex justify-content-between">
+			<div class="bottom d-lg-flex justify-content-between">
 				<div class="shadow copyright">
 					<p>© 2019 <a href="/" class="dashed">Кондитерские изделия оптом и в розницу</a> Все права защищены <br>
 					Данный сайт носит исключительно информационный характер <br>
