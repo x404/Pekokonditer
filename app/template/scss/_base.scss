@@ -35,18 +35,8 @@ body{
 
 
 
-.header{
-	background: url(../images/bg-1.jpg) no-repeat center top;
-	background-size: cover;	
-	padding-bottom: 4.2rem;
-	&__right{
-		position: relative;
-		&.search-show{
-			.sisea-search-form{
-				display: block;
-			}
-		}		
-	}
+.header,
+.header-scrolled{
 	.sisea-search-form{
 		display: none;
 		background-color: #666;
@@ -79,8 +69,24 @@ body{
 			}
 		}
 	}
+	.right{
+		position: relative;
+		&.search-show{
+			.sisea-search-form{
+				display: block;
+			}
+		}		
+	}	
+}
+
+.header{
+	background: url(../images/bg-1.jpg) no-repeat center top;
+	background-size: cover;	
+	padding-bottom: 4.2rem;
 
 }
+
+
 
 .webp{
 	.header{
@@ -131,26 +137,6 @@ input::-moz-focus-inner{
 							 "footer";
 		grid-template-rows: auto 1fr auto;
 	}
-
-
-	// @media (min-width: 992px){
-	// 	.grid-lg-2{
-	// 		grid-template-columns: repeat(2, 1fr);
-	// 		grid-row-gap: 30px;
-	// 	}	
-	// 	.grid-lg-3{
-	// 		grid-template-columns: repeat(3, 1fr);
-	// 		grid-row-gap: 30px;
-	// 	}		
-	// 	.d-lg-grid{
-	// 		display: grid !important;
-	// 	}
-	// }
-	// @media (min-width: 1250px){
-	// 	.grid-xl-6{
-	// 		grid-template-columns: repeat(6, 1fr)
-	// 	}		
-	// }
 }
 
 
@@ -240,10 +226,6 @@ em strong
 }
 
 
-.form-control {
-
-}
-
 .d-center{
 	margin-left: auto;
 	margin-right: auto;
@@ -305,8 +287,53 @@ em strong
 		line-height: 1.2;
 		margin-top: .5rem;
 	}
-	&__right{
+	.right{
 		padding-top: 2rem;
+	}
+}
+
+
+.bodyFixed{
+	.header-scrolled{
+		// top: 0;
+		transform: translateY(0);
+	}
+}
+
+.header-scrolled{
+	// background: $color2;
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 0 15px #ccc;
+	left: 0;
+	padding: 1.2rem 0;
+	position: fixed;
+	transition: .4s;
+	// top: -100px;
+	top: 0;
+
+	transform: translateY(-100px);
+	width: 100%;
+	z-index: 999;
+	.navmenu{
+		margin-top: 0;
+	}
+
+	.logo{
+		text-align: center;
+		width: 145px;
+		background: url(../images/gradline.png) no-repeat right center;
+	}
+
+	.folder{
+		&:hover{
+			.subnav{
+				display: block;
+				left: -190px;
+			}
+		}
+	}
+	.subnav{
+		display: none;
 	}
 }
 
