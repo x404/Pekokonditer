@@ -288,3 +288,14 @@ $(function(){
 		}
 	})
 });
+
+
+window.onload = function(){
+	// search
+	document.querySelector('.btn-search').addEventListener('click', function() {
+		document.querySelector('.header__right').classList.toggle('search-show');
+		this.classList.toggle('btn-search-close');
+	});
+};
+
+

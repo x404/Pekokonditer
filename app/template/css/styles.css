@@ -3549,6 +3549,48 @@ body {
   background: url(../images/bg-1.jpg) no-repeat center top;
   background-size: cover;
   padding-bottom: 4.2rem; }
+  .header__right {
+    position: relative; }
+    .header__right.search-show .sisea-search-form {
+      display: block; }
+  .header .sisea-search-form {
+    display: none;
+    background-color: #666;
+    border-radius: .5rem;
+    padding: .8rem 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 50px; }
+    .header .sisea-search-form .form-control {
+      background: none;
+      border: none;
+      border-right: 1px solid #ddd;
+      color: #fff;
+      font-size: 1.6rem;
+      width: 24rem; }
+      .header .sisea-search-form .form-control::-webkit-input-placeholder {
+        color: #fff; }
+      .header .sisea-search-form .form-control::-moz-placeholder {
+        color: #fff; }
+      .header .sisea-search-form .form-control:-ms-input-placeholder {
+        color: #fff; }
+      .header .sisea-search-form .form-control:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .header .sisea-search-form .form-control:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .header .sisea-search-form .form-control:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+    .header .sisea-search-form .submit {
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAMAAACnUt2HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABF1BMVEXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSXwVSX///9N5SydAAAAW3RSTlMAAlWr3Pbx1p4+ONPsr5CTurwgX/jnZQUNf/U6RPzLFi7m7yEJ4hgy+WFgjy+17SyA4eutpdTDrrYrhWKO/uQVMbJHyhQcY336WsA70f1rpvPXmj0RxQq3jAajNQlXNQAAAAFiS0dEXOrYAJcAAAAHdElNRQfjBBsRFAwUYOfrAAAAyklEQVQY02NgAAJGJmYWVjZ2Dk4GBODijubh5eMXYI0WFIKJCYuIiomDGBKSUjzSEDEZWTl5mLyCopIyiFZRVVRDmKSuIQCiNKO1kIxn0I7WAZK6euLIgvrRBkDSUJABBRgZAwkpE1RBUzNsKs2BhAWqmZbRVkDSOloYWdDGVgfsTjt7hJiDiCOYdpJ1doFrttNzhbC0NOzcIH53l4r28ITKS5tGG0FCycvbx9cPKsrI5K/qGxAYFMzAEBIa7c6AAcLCoyMwRSOjAgHHrBmG1xrhngAAAABJRU5ErkJggg==") no-repeat center;
+      border: none;
+      cursor: pointer;
+      filter: grayscale(1) brightness(5);
+      height: 3rem;
+      margin-left: .5rem;
+      transition: filter .3s;
+      width: 3rem; }
+      .header .sisea-search-form .submit:hover {
+        filter: none; }
 
 .webp .header {
   background-image: url(../images/bg-1.webp); }
@@ -3722,9 +3764,15 @@ em strong {
 
 .btn-search {
   background-image: url(../images/sprite.png);
-  background-position: -22px 0px;
+  background-position: 0px -21px;
   width: 20px;
-  height: 19px; }
+  height: 19px;
+  padding: 0; }
+  .btn-search-close {
+    background-image: url(../images/sprite.png);
+    background-position: -22px 0px;
+    width: 20px;
+    height: 19px; }
 
 .btn-str {
   background: none;
@@ -3849,8 +3897,7 @@ em strong {
       border-bottom-color: rgba(0, 0, 0, 0); }
   .footer .bottom {
     border-top: 1px solid #d3d3d3;
-    margin-top: 2.5rem;
-    padding-bottom: 1.5rem; }
+    margin-top: 2.5rem; }
   .footer .social a {
     align-items: center;
     background: #fff;
@@ -3868,6 +3915,8 @@ em strong {
       background-color: #f05525; }
       .footer .social a:hover img {
         filter: brightness(5); }
+  .footer .copyright {
+    padding: 1.5rem; }
   .footer .copyright,
   .footer .creators {
     padding-top: 1.5rem; }
@@ -3885,6 +3934,32 @@ em strong {
 
 .webp .footer {
   background-image: url(../images/footer-bg.webp); }
+
+.creators {
+  position: relative; }
+
+.creators-wrapper {
+  position: absolute;
+  bottom: 0; }
+  .creators-wrapper a {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 4rem;
+    width: 23rem; }
+    .creators-wrapper a img {
+      transition: filter .3s; }
+    .creators-wrapper a:hover {
+      background-color: #f05525;
+      color: #fff;
+      text-decoration: none; }
+      .creators-wrapper a:hover img {
+        filter: grayscale(1) invert(1) brightness(5); }
 
 /* =/footer
 ---------------------------*/
