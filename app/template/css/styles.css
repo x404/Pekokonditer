@@ -3679,21 +3679,6 @@ p {
     bottom: -10px;
     width: 100%; }
 
-strong,
-.bold {
-  font-weight: normal;
-  font-family: "SegoeUIBold"; }
-
-em, i,
-.italic {
-  font-style: normal;
-  font-family: "SegoeUIItalic"; }
-
-strong em,
-em strong {
-  font-weight: normal;
-  font-family: "SegoeUIBoldItalic"; }
-
 .tdn {
   text-decoration: none; }
   .tdn:hover {
@@ -3704,7 +3689,8 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main ul li:before {
+.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main ul li:before,
+.text ul li:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4244,13 +4230,32 @@ em strong {
       right: 0;
       left: auto; }
 
-.goods .product__pic {
-  background-color: #f7f6f2;
+.goods .product__shortdesc {
+  background-color: #f05525;
+  align-items: center;
+  bottom: 0;
+  color: #fff;
   display: flex;
   justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .3s;
+  z-index: 999; }
+
+.goods .product__pic {
   align-items: center;
+  background-color: #f7f6f2;
+  display: flex;
   height: 272px;
-  max-width: 272px; }
+  justify-content: center;
+  max-width: 272px;
+  position: relative; }
+  .goods .product__pic:hover .product__shortdesc {
+    opacity: 1; }
 
 .goods .product__title {
   font-size: 1.6rem;
@@ -4811,78 +4816,114 @@ em strong {
 
 /* =/breadcrumbs
 ---------------------------*/
+.content .text {
+  margin-top: 2rem; }
+
+.topline-solid {
+  border-top: 2px solid #eee;
+  margin-top: 1rem;
+  padding-top: 2.5rem; }
+
 .main {
   padding-bottom: 3rem; }
 
-main h1 {
+main h1,
+.text h1 {
   font-size: 1.8rem;
   text-transform: uppercase; }
-  main h1 span {
+  main h1 span,
+  .text h1 span {
     display: inline-block;
     margin-bottom: 1.5rem;
     padding-bottom: 1.2rem;
     border-bottom: 2px solid #eee; }
 
-main h2 {
+main h2,
+.text h2 {
   font-size: 1.6rem; }
 
-main h3 {
+main h3,
+.text h3 {
   font-size: 1.6rem; }
 
-main h4 {
+main h4,
+.text h4 {
   font-size: 1.4rem; }
 
-main h1, main h2, main h3, main h4 {
+main h1, main h2, main h3, main h4,
+.text h1,
+.text h2,
+.text h3,
+.text h4 {
   font-weight: normal; }
 
-main a {
+main a,
+.text a {
   border-bottom: 1px dashed #f05525; }
-  main a:hover {
+  main a:hover,
+  .text a:hover {
     border-bottom: none; }
 
-main strong, main b {
+main strong, main b,
+.text strong,
+.text b {
   font-weight: bold; }
 
-main .uppercase {
+main .uppercase,
+.text .uppercase {
   font-size: 1.8rem;
   margin-bottom: 0;
   text-transform: uppercase; }
 
-main table {
+main table,
+.text table {
   margin-top: 1.5rem;
   font-size: 1.4rem; }
-  main table th {
+  main table th,
+  .text table th {
     font-weight: bold; }
   main table th,
-  main table td {
+  main table td,
+  .text table th,
+  .text table td {
     color: #404040;
     border: 1px solid #ccc;
     padding: 1rem 2.5rem; }
-  main table a {
+  main table a,
+  .text table a {
     color: #f05525;
     text-decoration: none; }
-    main table a:hover {
+    main table a:hover,
+    .text table a:hover {
       text-decoration: underline; }
 
-main .table {
+main .table,
+.text .table {
   margin-top: 1.5rem; }
-  main .table th {
+  main .table th,
+  .text .table th {
     font-weight: bold; }
   main .table th,
-  main .table td {
+  main .table td,
+  .text .table th,
+  .text .table td {
     border: 1px solid #ccc;
     color: #404040;
     padding: .7rem 2.5rem; }
-  main .table a {
+  main .table a,
+  .text .table a {
     color: #f05525; }
 
-main ul {
+main ul,
+.text ul {
   list-style: none; }
-  main ul li {
+  main ul li,
+  .text ul li {
     margin: 1.1rem 0;
     padding-left: 1.2rem;
     position: relative; }
-    main ul li:before {
+    main ul li:before,
+    .text ul li:before {
       background-color: #f05525;
       border-radius: 50%;
       height: 5px;
@@ -4890,14 +4931,17 @@ main ul {
       top: 7px;
       width: 5px; }
 
-main ol {
+main ol,
+.text ol {
   counter-reset: li;
   list-style: none; }
-  main ol li {
+  main ol li,
+  .text ol li {
     margin: 1rem 0;
     padding-left: 20px;
     position: relative; }
-    main ol li:before {
+    main ol li:before,
+    .text ol li:before {
       color: #f05525;
       content: counter(li, decimal) ".";
       counter-increment: li;
@@ -4906,6 +4950,9 @@ main ol {
       position: absolute;
       top: 0;
       width: 20px; }
+
+.content .goods {
+  margin: 4rem 0; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5236,7 +5283,8 @@ main ol {
     display: none; }
   .breadcrumbs {
     margin: 2rem 0; }
-  main {
+  main,
+  .content .text {
     text-align: justify; } }
 
 @media (max-width: 1380px) {

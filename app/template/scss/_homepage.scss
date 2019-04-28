@@ -162,13 +162,35 @@
 				}
 			}
 		}
-		&__pic{
-			background-color: #f7f6f2;
+		&__shortdesc{
+			background-color: $color4;
+			align-items: center;
+			bottom: 0;
+			color: $color2;
 			display: flex;
 			justify-content: center;
+			left: 0;
+			opacity: 0;
+			padding: 1.5rem;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transition: opacity .3s;
+			z-index: 999;
+		}
+		&__pic{
 			align-items: center;
+			background-color: #f7f6f2;
+			display: flex;
 			height: 272px;
+			justify-content: center;
 			max-width: 272px;
+			position: relative;
+			&:hover{
+				.product__shortdesc{
+					opacity: 1;
+				}
+			}
 		}
 		&__title{
 			font-size: 1.6rem;

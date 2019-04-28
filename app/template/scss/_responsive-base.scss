@@ -214,7 +214,8 @@
 	.breadcrumbs{
 		margin: 2rem 0;
 	}
-	main{
+	main,
+	.content .text{
 		text-align: justify;
 	}
 }

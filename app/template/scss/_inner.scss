@@ -93,11 +93,27 @@
 /* =/breadcrumbs
 ---------------------------*/
 
+
+.content{
+	.text{
+		margin-top: 2rem;
+	}
+}
+
+
+.topline-solid{
+	border-top: 2px solid $color8;
+	margin-top: 1rem;
+	padding-top: 2.5rem;
+}
+
 .main{
 	padding-bottom: 3rem;
 }
 
-main{
+
+main,
+.text{
 	h1{
 		font-size: 1.8rem;
 		text-transform: uppercase;
@@ -219,4 +235,11 @@ main{
 		}
 	}
 
+}
+
+
+.content{
+	.goods{
+		margin: 4rem 0;
+	}
 }
