@@ -173,7 +173,6 @@ p{
 .regular{
 	font-family: "SegoeUIRegular";	
 }
-
 .underline{
 	position: relative;
 	&:after{
@@ -376,6 +375,10 @@ p{
 					color: $color2;
 					text-decoration: none;
 				}
+			}
+			&.active > a, span{
+				background-color: $color4;
+				color: $color2;				
 			}
 			&:hover{
 				& > a{

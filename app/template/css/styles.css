@@ -3689,7 +3689,12 @@ p {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main ul li:before,
+.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+.text a[href$=".pdf"]:before,
+.text a[href$=".xsl"]:before,
+.text a[href$=".xslx"]:before,
+.text a[href$=".doc"]:before,
+.text a[href$=".docx"]:before, main ul li:before,
 .text ul li:before {
   content: "";
   display: block;
@@ -3820,6 +3825,9 @@ p {
           background-color: #f05525;
           color: #fff;
           text-decoration: none; }
+      .navmenu .nav > li.active > a, .navmenu .nav > li span {
+        background-color: #f05525;
+        color: #fff; }
       .navmenu .nav > li:hover > a {
         background-color: #f05525;
         color: #fff;
@@ -4857,12 +4865,55 @@ main h1, main h2, main h3, main h4,
 .text h4 {
   font-weight: normal; }
 
+main p,
+.text p {
+  line-height: 1.8; }
+
 main a,
 .text a {
   border-bottom: 1px dashed #f05525; }
   main a:hover,
   .text a:hover {
     border-bottom: none; }
+  main a[href$=".pdf"]:before,
+  .text a[href$=".pdf"]:before {
+    background: url(../images/ext/pdf.png); }
+  main a[href$=".xsl"]:before, main a[href$=".xslx"]:before,
+  .text a[href$=".xsl"]:before,
+  .text a[href$=".xslx"]:before {
+    background: url(../images/ext/xsl.png); }
+  main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+  .text a[href$=".doc"]:before,
+  .text a[href$=".docx"]:before {
+    background: url(../images/ext/doc.png); }
+  main a[href$=".pdf"], main a[href$=".xsl"], main a[href$=".xslx"], main a[href$=".doc"], main a[href$=".docx"],
+  .text a[href$=".pdf"],
+  .text a[href$=".xsl"],
+  .text a[href$=".xslx"],
+  .text a[href$=".doc"],
+  .text a[href$=".docx"] {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 2rem;
+    padding-top: 7px;
+    position: relative; }
+    main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+    .text a[href$=".pdf"]:before,
+    .text a[href$=".xsl"]:before,
+    .text a[href$=".xslx"]:before,
+    .text a[href$=".doc"]:before,
+    .text a[href$=".docx"]:before {
+      height: 32px;
+      left: -40px;
+      top: 5px;
+      width: 30px; }
+    main a[href$=".pdf"]:hover, main a[href$=".xsl"]:hover, main a[href$=".xslx"]:hover, main a[href$=".doc"]:hover, main a[href$=".docx"]:hover,
+    .text a[href$=".pdf"]:hover,
+    .text a[href$=".xsl"]:hover,
+    .text a[href$=".xslx"]:hover,
+    .text a[href$=".doc"]:hover,
+    .text a[href$=".docx"]:hover {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
 
 main strong, main b,
 .text strong,
@@ -4907,9 +4958,9 @@ main .table,
   main .table td,
   .text .table th,
   .text .table td {
-    border: 1px solid #ccc;
+    border: 1px solid #b3b3b3;
     color: #404040;
-    padding: .7rem 2.5rem; }
+    padding: .8rem 1.5rem; }
   main .table a,
   .text .table a {
     color: #f05525; }

@@ -138,10 +138,57 @@ main,
 		font-weight: normal;
 	}
 
+	p{
+		line-height: 1.8;
+	}
+
 	a{
 		border-bottom: 1px dashed $color4;
 		&:hover{
 			border-bottom: none;
+		}
+
+		&[href$=".pdf"]{
+			&:before{
+				background: url(../images/ext/pdf.png);
+			}
+		}
+
+		&[href$=".xsl"],
+		&[href$=".xslx"]{
+			&:before{
+				background: url(../images/ext/xsl.png);
+			}
+		}
+
+		&[href$=".doc"],
+		&[href$=".docx"]{
+			&:before{
+				background: url(../images/ext/doc.png);
+			}
+		}
+
+		&[href$=".pdf"],
+		&[href$=".xsl"],
+		&[href$=".xslx"],
+		&[href$=".doc"],
+		&[href$=".docx"]
+		{
+			display: inline-block;
+			margin-left: 40px;
+			margin-top: 2rem;
+			padding-top: 7px;
+			position: relative;
+			&:before{
+				@extend .before;
+				height: 32px;
+				left: -40px;
+				top: 5px;
+				width: 30px;
+			}
+			&:hover{
+				border-bottom: 1px dashed rgba(0,0,0,0)
+			}
 		}
 	}
 
@@ -186,15 +233,14 @@ main,
 		}
 		th,
 		td{
-			border: 1px solid #ccc;
+			border: 1px solid #b3b3b3;
 			color: #404040;
-			padding: .7rem 2.5rem;
+			padding: .8rem 1.5rem;
 		}
 
 		a{
 			color: $color4;
 		}
-
 	}
 
 	ul{
