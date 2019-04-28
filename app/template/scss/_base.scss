@@ -295,20 +295,17 @@ em strong
 
 .bodyFixed{
 	.header-scrolled{
-		// top: 0;
 		transform: translateY(0);
 	}
 }
 
 .header-scrolled{
-	// background: $color2;
 	background: rgba(255,255,255,.8);
 	box-shadow: 0 0 15px #ccc;
 	left: 0;
 	padding: 1.2rem 0;
 	position: fixed;
 	transition: .4s;
-	// top: -100px;
 	top: 0;
 
 	transform: translateY(-100px);

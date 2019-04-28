@@ -65,3 +65,158 @@
 		right: -12px;
 	}
 }
+
+
+
+/* =breadcrumbs
+---------------------------*/
+.breadcrumbs{
+	margin: 3.2rem 0 4.5rem;
+	.B_crumbBox{
+		display: flex;
+		img{
+			filter: grayscale(1) brightness(5) invert(1);
+		}
+		a:hover{
+			img{
+				filter: none;
+			}
+		}
+	}
+	.B_lastCrumb{
+		color: $color4;
+	}
+	.separator{
+		margin: 0 1rem;
+	}
+}
+/* =/breadcrumbs
+---------------------------*/
+
+.main{
+	padding-bottom: 3rem;
+}
+
+main{
+	h1{
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		span{
+			display: inline-block;
+			margin-bottom: 1.5rem;
+			padding-bottom: 1.2rem;
+			border-bottom: 2px solid #eee;			
+		}
+	}
+	h2{
+		font-size: 1.6rem;		
+	}
+	h3{
+		font-size: 1.6rem;		
+	}
+	h4{
+		font-size: 1.4rem;		
+	}
+
+	h1, h2, h3, h4{
+		font-weight: normal;
+	}
+
+	a{
+		border-bottom: 1px dashed $color4;
+		&:hover{
+			border-bottom: none;
+		}
+	}
+
+	strong, b{
+		font-weight: bold;
+	}
+	.uppercase{
+		font-size: 1.8rem;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+
+	table{
+		margin-top: 1.5rem;
+		font-size: 1.4rem;
+		th{
+			font-weight: bold;
+		}
+
+		th,
+		td{
+			color: #404040;
+			border: 1px solid #ccc;
+			padding: 1rem 2.5rem;
+		}
+
+		a{
+			color: $color4;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+	.table{
+		margin-top: 1.5rem;
+		th{
+			font-weight: bold;
+		}
+		th,
+		td{
+			border: 1px solid #ccc;
+			color: #404040;
+			padding: .7rem 2.5rem;
+		}
+
+		a{
+			color: $color4;
+		}
+
+	}
+
+	ul{
+		list-style: none;
+		li{
+			margin: 1.1rem 0;
+			padding-left: 1.2rem;
+			position: relative;
+			&:before{
+				@extend .before;
+				background-color: $color4;
+				border-radius: 50%;
+				height: 5px;
+				left: 0;
+				top: 7px;
+				width: 5px;
+			}
+		}
+	}
+
+	ol{
+		counter-reset: li;  
+		list-style: none;
+		li{
+			margin: 1rem 0;
+			padding-left: 20px;
+			position: relative;
+			&:before{
+				color: $color4;
+				content: counter(li, decimal) ".";
+				counter-increment: li;
+				font-size: 14px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 20px;
+			}
+		}
+	}
+
+}
