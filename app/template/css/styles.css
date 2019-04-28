@@ -5005,6 +5005,26 @@ main ol,
 .content .goods {
   margin: 4rem 0; }
 
+.submenu {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+  margin-bottom: 2rem; }
+  .submenu ul {
+    border-bottom: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem; }
+    .submenu ul li {
+      margin: 0 1rem; }
+      .submenu ul li.active .btn {
+        background-color: #f05525;
+        color: #fff; }
+    .submenu ul .btn {
+      width: auto;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

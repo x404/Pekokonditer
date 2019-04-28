@@ -289,3 +289,31 @@ main,
 		margin: 4rem 0;
 	}
 }
+
+
+.submenu{
+	display: flex;
+	justify-content: center;
+	margin-top: -3rem;
+	margin-bottom: 2rem;
+	ul{
+		border-bottom: 2px solid #eee;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 3rem;
+		li{
+			margin: 0 1rem;
+			&.active{
+				.btn{
+					background-color: $color4;
+					color: $color2;
+				}
+			}
+		}
+		.btn{
+			width: auto;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+}
