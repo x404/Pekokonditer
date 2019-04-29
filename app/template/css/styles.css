@@ -5220,6 +5220,20 @@ div.pagination {
       background-color: #000;
       text-decoration: none; }
 
+.reviews__list .reviews__item {
+  margin-top: 4.5rem; }
+
+.reviews__list .review__link {
+  cursor: pointer; }
+
+.reviews__list .review__text {
+  min-height: 15rem;
+  height: auto; }
+
+.reviews__list .review__moretext {
+  display: none;
+  margin-top: 3rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

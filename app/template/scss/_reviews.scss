@@ -1,0 +1,18 @@
+.reviews__list{
+	.reviews__item{
+		margin-top: 4.5rem;
+	}
+	.review{
+		&__link{
+			cursor: pointer;
+		}
+		&__text{
+			min-height: 15rem;
+			height: auto;
+		}
+		&__moretext{
+			display: none;
+			margin-top: 3rem;
+		}
+	}
+}
