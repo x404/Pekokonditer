@@ -182,6 +182,12 @@
 	}
 }
 
+@media (max-width: 768px){
+	.main-grid{
+		display: block !important;
+	}
+}
+
 @media (max-width: 767px){
 	.header{
 		.sisea-search-form{

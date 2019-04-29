@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
 	$('#groups-carousel2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -164,6 +162,105 @@ $(document).ready(function(){
 	});
 
 
+	$('#gallery-carousel').slick({
+		slidesToShow: 4,
+		arrows: true,
+		slidesToScroll: 1,
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		dots: false,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: true
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '80px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '100px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '70px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '50px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 460,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '40px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 385,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '25px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 350,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '15px',
+					arrows: false
+				}
+			},
+		]
+	});
+
+
 
 	$('#home-carousel').slick({
 		slidesToShow: 1,
@@ -226,6 +323,13 @@ $(document).ready(function(){
 	});
 
 
+	// $('.fancybox-media, .fancybox').fancybox({
+	// 	openEffect  : 'none',
+	// 	closeEffect : 'none',
+	// 	helpers : {
+	// 		fancybox-mediamedia : {}
+	// 	}
+	// });
 
 
 	// mobile-menu

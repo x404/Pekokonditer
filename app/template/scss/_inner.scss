@@ -266,6 +266,9 @@ main,
 	.goods{
 		margin: 4rem 0;
 	}
+	.gallery{
+		margin: 3rem 0;
+	}
 }
 
 
@@ -300,4 +303,56 @@ main,
 .share{
 	margin-top: 4rem;
 	padding-top: 3rem;
+}
+
+
+#gallery-carousel{
+	a{
+		border-bottom: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 270px;
+		img{
+			display: block;
+			border-radius: 1.5rem
+		}
+		&:before,
+		&:after{
+			@extend .before;
+			opacity: 0;
+			transition: opacity .3s;
+		}
+		&:before{
+			background-color: rgba(0,0,0,.3);
+			border-radius: 1.5rem;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&:after{
+			@include sprite($icon-zoom);
+			left: 50%;
+			margin-left: -25px;
+			margin-top: -12px;
+			top: 50%;
+		}
+		&:hover{
+			&:before,
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+
+	.slick{
+		&-prev{
+			left: -25px;
+		}
+		&-next{
+			right: -25px;
+		}
+	}
 }
