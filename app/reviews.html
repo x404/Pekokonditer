@@ -372,23 +372,53 @@
 					<!-- =pagination -->
 					<div class="pagination topline-solid d-flex justify-content-center justify-content-md-end">
 						<ul class="pagination d-flex justify-content-center justify-content-md-end">
-							<li><a href="#" title="">1</a></li>
+							<li class="active"><a href="#" title="">1</a></li>
 							<li><a href="#" title="">2</a></li>
-							<li class="active"><a href="#" title="">3</a></li>
+							<li><a href="#" title="">3</a></li>
 							<li><a href="#" title="">4</a></li>
 							<li><a href="#" title="">5</a></li>
 						</ul>
 					</div>
 					<!-- =/pagination -->
+
+					<div id="comment-form-placeholder" class="topline-solid comment-form">
+						<h3>ХОТИТЕ ОСТАВИТЬ ОТЗЫВ ?</h3>
+						<form class="form well ec-form form-policy" method="post" role="form" id="ec-form-resource-23" action="#">
+							<input type="hidden" name="thread" value="resource-23">
+
+							<div class="form-group ec-antispam">
+								<label for="ec-address-resource-23" class="control-label">Антиспам поле. Его необходимо скрыть через css</label>
+								<input type="text" name="address" class="form-control" id="ec-address-resource-23" value="" >
+							</div>
+							<div class="row">
+								<div class="col-md-4 form-group">
+									<label for="ec-user_name-resource-23" class="control-label visually-hidden">как вас зовут ?</label>
+									<input type="text" name="user_name" class="form-control required" id="ec-user_name-resource-23" value="" placeholder="как вас зовут ? *">
+								</div>
+								<div class="col-md-4 form-group">
+									<label for="ec-user_email-resource-23" class="control-label visually-hidden">ваш e-mail</label>
+									<input type="text" name="user_email" class="form-control required email" id="ec-user_email-resource-23" value="" placeholder="ваш e-mail *">
+								</div>
+								<div class="col-md-4 form-group">
+									<label for="ec-user_tel-resource-23" class="control-label visually-hidden">ваш телефон</label>
+									<input type="text" name="user_email" class="form-control required" id="ec-user_tel-resource-23" value="" placeholder="ваш телефон *">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="ec-text-resource-23" class="control-label visually-hidden">Ваше сообщение</label>
+								<textarea  name="text" class="form-control" rows="5" id="ec-text-resource-23" placeholder="текст вашего сообщения ..."></textarea>
+							</div>
+							<div class="form-actions text-center">
+								<input type="submit" class="btn btn-orange btn-hover-gray btn-wauto submit" name="send" value="отправить">
+							</div>
+							<div class="policy">
+								<input type="checkbox" id="cbcheckbox" value="" name="checkbox" checked="checked" class="user-access" tabindex="14">
+								<label for="cbcheckbox">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" class="dashed" target="_blank">Пользовательского соглашения</a></label>
+							</div>
+						</form>
+					</div>
 				</main>	
 
-				<!-- =share -->
-				<div class="share topline-solid">
-					<div class="container text-right">
-						<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,linkedin,lj,viber,whatsapp,skype,telegram"></div>
-					</div>
-					<!-- =/share -->
-				</div>
 				<!-- InstanceEndEditable -->
 			</div>
 		</div>

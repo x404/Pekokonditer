@@ -3744,8 +3744,16 @@ p {
   .btn-gray {
     background-color: #808081;
     color: #fff; }
+  .btn-orange {
+    background-color: #f05525;
+    color: #fff;
+    text-decoration: none; }
   .btn-hover-orange:hover {
     background-color: #f05525;
+    color: #fff;
+    text-decoration: none; }
+  .btn-hover-gray:hover {
+    background-color: #808080;
     color: #fff;
     text-decoration: none; }
   .btn-wauto {
@@ -5120,6 +5128,9 @@ main ol,
       margin-left: auto;
       margin-right: auto; } }
 
+label.error {
+  display: none !important; }
+
 .actions__list,
 .news__list {
   grid-column-gap: 5rem;
@@ -5233,6 +5244,66 @@ div.pagination {
 .reviews__list .review__moretext {
   display: none;
   margin-top: 3rem; }
+
+.ec-antispam {
+  display: none; }
+
+.ec-form .form-control {
+  background-color: #a6a6a6;
+  border-radius: 3.2rem;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 1.5rem;
+  height: 3.2rem;
+  margin-top: 2.4rem;
+  padding: 0 1.8rem;
+  width: 100%; }
+  .ec-form .form-control::-webkit-input-placeholder {
+    color: #fff; }
+  .ec-form .form-control::-moz-placeholder {
+    color: #fff; }
+  .ec-form .form-control:-ms-input-placeholder {
+    color: #fff; }
+  .ec-form .form-control:focus::-webkit-input-placeholder {
+    transition: line-height 0.5s ease; }
+  .ec-form .form-control:focus::-moz-placeholder {
+    transition: line-height 0.5s ease; }
+  .ec-form .form-control:focus:-ms-input-placeholder {
+    transition: line-height 0.5s ease; }
+  .ec-form .form-control:disabled {
+    opacity: .7; }
+  .ec-form .form-control.error {
+    border-color: #f05525; }
+  @media (max-width: 768px) {
+    .ec-form .form-control {
+      margin-top: 1.2rem; } }
+
+.ec-form textarea.form-control {
+  border-radius: 1.5rem;
+  height: 10rem;
+  padding-top: .8rem; }
+
+.ec-form input[type="submit"]:disabled {
+  background-color: #a6a6a6 !important;
+  cursor: default;
+  opacity: .7; }
+
+.comment-form {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-top: 3rem; }
+  .comment-form h3 {
+    font-size: 3rem;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .comment-form h3 {
+        font-size: 2.4rem; } }
+  .comment-form .btn {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    margin-top: 2rem; }
+  .comment-form .policy {
+    margin-top: 3rem; }
 
 /* =mobile-menu
 ---------------------------*/

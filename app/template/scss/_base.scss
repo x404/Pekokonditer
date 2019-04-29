@@ -239,10 +239,24 @@ p{
 		background-color: $color5;
 		color: $color2;
 	}
+
+	&-orange{
+		background-color: $color4;
+		color: $color2;
+		text-decoration: none;
+	}
+
 	&-hover{
 		&-orange{
 			&:hover{
 				background-color: $color4;
+				color: $color2;
+				text-decoration: none;
+			}
+		}
+		&-gray{
+			&:hover{
+				background-color: $color6;
 				color: $color2;
 				text-decoration: none;
 			}

@@ -16,3 +16,68 @@
 		}
 	}
 }
+
+.ec-antispam{
+	display: none;
+}
+
+.ec-form{
+	.form-control{
+		@include placeholder(#fff);
+		background-color: $color10;
+		border-radius: 3.2rem;
+		border: 2px solid rgba(0,0,0,0);
+		color: $color2;
+		font-size: 1.5rem;
+		height: 3.2rem;
+		margin-top: 2.4rem;
+		padding: 0 1.8rem; 
+		width: 100%;
+		&:disabled{
+			opacity: .7;
+		}
+		&.error{
+			border-color: $color4;
+		}
+		@media (max-width: 768px){
+			margin-top: 1.2rem;	
+		}
+	}
+	textarea.form-control{
+		border-radius: 1.5rem;
+		height: 10rem;
+		padding-top: .8rem;
+	}
+
+
+	input[type="submit"]{
+		&:disabled{
+			background-color: $color10 !important;	
+			cursor: default;
+			opacity: .7;
+		}		
+	}
+}
+
+
+.comment-form{
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+	padding-top: 3rem;
+	h3{
+		font-size: 3rem;
+		text-align: center;
+		@media (max-width: 768px){
+			font-size: 2.4rem;
+		}
+	}
+	.btn{
+		padding-left: 5.5rem;
+		padding-right: 5.5rem;
+		margin-top: 2rem;
+	}
+
+	.policy{
+		margin-top: 3rem;
+	}
+}

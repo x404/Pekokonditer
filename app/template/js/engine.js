@@ -366,6 +366,8 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.ec-form').validate()
+
 });
 
 
