@@ -240,3 +240,12 @@
 		text-align: justify;
 	}
 }
+
+
+@media (max-width: 400px){
+	.header, .header-scrolled{
+		.sisea-search-form .form-control{
+			width: 20rem;	
+		}
+	}
+}
