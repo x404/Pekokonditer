@@ -6,6 +6,21 @@
 }
 
 
+@media (max-width: 1399px){
+	.footer{
+		.column-social .wrapper{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		.social{
+			a{
+				margin-right: .5rem;
+			}
+		}
+	}
+}
+
+
 @media (max-width: 1250px){
 	.header-scrolled{
 		.navmenu .nav>li>a{
@@ -14,6 +29,12 @@
 		}
 		.folder:hover .subnav{
 			left: -280px;
+		}
+	}
+
+	.footer{
+		.social{
+			flex-wrap: wrap;
 		}
 	}
 }

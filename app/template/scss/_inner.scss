@@ -77,6 +77,14 @@
 		img{
 			filter: grayscale(1) brightness(5) invert(1);
 		}
+		a{
+			color: $color6;
+			border-bottom: 1px dashed rgba(0,0,0,0);
+			&:hover{
+				border-bottom-color: $color6;
+				text-decoration: none;
+			}
+		}
 		a:hover{
 			img{
 				filter: none;
@@ -143,9 +151,12 @@ main,
 	}
 
 	a{
+		color: $color4;
 		border-bottom: 1px dashed $color4;
 		&:hover{
+			color: $color4;
 			border-bottom: none;
+			text-decoration: none;
 		}
 
 		&[href$=".pdf"]{
@@ -316,4 +327,10 @@ main,
 			padding-right: 2rem;
 		}
 	}
+}
+
+
+.share{
+	margin-top: 4rem;
+	padding-top: 3rem;
 }

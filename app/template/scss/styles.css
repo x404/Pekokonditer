@@ -4284,7 +4284,12 @@ p {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main ul li:before,
+.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+.text a[href$=".pdf"]:before,
+.text a[href$=".xsl"]:before,
+.text a[href$=".xslx"]:before,
+.text a[href$=".doc"]:before,
+.text a[href$=".docx"]:before, main ul li:before,
 .text ul li:before {
   content: "";
   display: block;
@@ -4415,6 +4420,9 @@ p {
           background-color: #f05525;
           color: #fff;
           text-decoration: none; }
+      .navmenu .nav > li.active > a, .navmenu .nav > li span {
+        background-color: #f05525;
+        color: #fff; }
       .navmenu .nav > li:hover > a {
         background-color: #f05525;
         color: #fff;
@@ -4704,8 +4712,8 @@ p {
   font-style: normal; }
 
 .homeslider {
-  background-size: cover;
   background: url(../images/mainslide-bg.jpg) no-repeat center top;
+  background-size: cover;
   font-size: 4.8rem;
   font-weight: 500;
   min-height: 633px; }
@@ -4809,13 +4817,31 @@ p {
       border-radius: 2rem 2rem 0 2rem;
       right: 0;
       left: auto; }
-.goods .product__pic {
-  background-color: #f7f6f2;
+.goods .product__shortdesc {
+  background-color: #f05525;
+  align-items: center;
+  bottom: 0;
+  color: #fff;
   display: flex;
   justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .3s;
+  z-index: 999; }
+.goods .product__pic {
   align-items: center;
+  background-color: #f7f6f2;
+  display: flex;
   height: 272px;
-  max-width: 272px; }
+  justify-content: center;
+  max-width: 272px;
+  position: relative; }
+  .goods .product__pic:hover .product__shortdesc {
+    opacity: 1; }
 .goods .product__title {
   font-size: 1.6rem;
   margin: 1.8rem 0;
@@ -5366,6 +5392,12 @@ p {
     display: flex; }
     .breadcrumbs .B_crumbBox img {
       filter: grayscale(1) brightness(5) invert(1); }
+    .breadcrumbs .B_crumbBox a {
+      color: #808080;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+      .breadcrumbs .B_crumbBox a:hover {
+        border-bottom-color: #808080;
+        text-decoration: none; }
     .breadcrumbs .B_crumbBox a:hover img {
       filter: none; }
   .breadcrumbs .B_lastCrumb {
@@ -5411,12 +5443,57 @@ main h1, main h2, main h3, main h4,
 .text h3,
 .text h4 {
   font-weight: normal; }
+main p,
+.text p {
+  line-height: 1.8; }
 main a,
 .text a {
+  color: #f05525;
   border-bottom: 1px dashed #f05525; }
   main a:hover,
   .text a:hover {
-    border-bottom: none; }
+    color: #f05525;
+    border-bottom: none;
+    text-decoration: none; }
+  main a[href$=".pdf"]:before,
+  .text a[href$=".pdf"]:before {
+    background: url(../images/ext/pdf.png); }
+  main a[href$=".xsl"]:before, main a[href$=".xslx"]:before,
+  .text a[href$=".xsl"]:before,
+  .text a[href$=".xslx"]:before {
+    background: url(../images/ext/xsl.png); }
+  main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+  .text a[href$=".doc"]:before,
+  .text a[href$=".docx"]:before {
+    background: url(../images/ext/doc.png); }
+  main a[href$=".pdf"], main a[href$=".xsl"], main a[href$=".xslx"], main a[href$=".doc"], main a[href$=".docx"],
+  .text a[href$=".pdf"],
+  .text a[href$=".xsl"],
+  .text a[href$=".xslx"],
+  .text a[href$=".doc"],
+  .text a[href$=".docx"] {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 2rem;
+    padding-top: 7px;
+    position: relative; }
+    main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+    .text a[href$=".pdf"]:before,
+    .text a[href$=".xsl"]:before,
+    .text a[href$=".xslx"]:before,
+    .text a[href$=".doc"]:before,
+    .text a[href$=".docx"]:before {
+      height: 32px;
+      left: -40px;
+      top: 5px;
+      width: 30px; }
+    main a[href$=".pdf"]:hover, main a[href$=".xsl"]:hover, main a[href$=".xslx"]:hover, main a[href$=".doc"]:hover, main a[href$=".docx"]:hover,
+    .text a[href$=".pdf"]:hover,
+    .text a[href$=".xsl"]:hover,
+    .text a[href$=".xslx"]:hover,
+    .text a[href$=".doc"]:hover,
+    .text a[href$=".docx"]:hover {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
 main strong, main b,
 .text strong,
 .text b {
@@ -5457,9 +5534,9 @@ main .table,
   main .table td,
   .text .table th,
   .text .table td {
-    border: 1px solid #ccc;
+    border: 1px solid #b3b3b3;
     color: #404040;
-    padding: .7rem 2.5rem; }
+    padding: .8rem 1.5rem; }
   main .table a,
   .text .table a {
     color: #f05525; }
@@ -5501,6 +5578,30 @@ main ol,
 
 .content .goods {
   margin: 4rem 0; }
+
+.submenu {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+  margin-bottom: 2rem; }
+  .submenu ul {
+    border-bottom: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem; }
+    .submenu ul li {
+      margin: 0 1rem; }
+      .submenu ul li.active .btn {
+        background-color: #f05525;
+        color: #fff; }
+    .submenu ul .btn {
+      width: auto;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+
+.share {
+  margin-top: 4rem;
+  padding-top: 3rem; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5733,6 +5834,12 @@ main ol,
   .footer .shadow-right:before {
     right: 0;
     left: auto; } }
+@media (max-width: 1399px) {
+  .footer .column-social .wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .footer .social a {
+    margin-right: .5rem; } }
 @media (max-width: 1250px) {
   .header-scrolled .navmenu .nav > li > a {
     padding-left: 1rem;
@@ -5843,7 +5950,8 @@ main ol,
   .breadcrumbs {
     margin: 2rem 0; }
 
-  main {
+  main,
+  .content .text {
     text-align: justify; } }
 @media (max-width: 1380px) {
   .review__text {
