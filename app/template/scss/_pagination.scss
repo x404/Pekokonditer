@@ -1,0 +1,54 @@
+$color_default: $color6;
+$color_hover: #000;
+$color_active: $color4;
+
+div.pagination{
+	display: flex;
+	font-size: 1.4rem;
+	margin-top: 3rem;
+	ul{
+		list-style: none;
+		display: flex;
+		margin-right: 2.4rem;
+		@media (max-width: 420px){
+			margin-right: 0;
+			flex-wrap: wrap;
+		}
+		// min-width: 382px;
+	}
+	li{
+		padding-left: 0;
+		&.active{
+			a,
+			span{
+				background-color: $color4;
+			}
+		}
+		margin: 0 .5rem;
+		span.current{
+			background-color: $color_active;
+			cursor: default;
+		}
+		&:before{
+			display: none;
+		}
+	}
+
+	a,
+	span{
+		border-bottom: none;
+		font-size: 1.5rem;
+		background-color: $color_default;
+		color: $color2;
+		display: flex;
+		height: 3.8rem;
+		width: 3.8rem;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		&:hover{
+			background-color: $color_hover;
+			text-decoration: none;
+		}
+	}
+}

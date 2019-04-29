@@ -4781,31 +4781,6 @@ p {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.item-news {
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-color: #f7f6f2;
-  min-height: 270px;
-  padding: 3.1rem 12rem 0 1.5rem;
-  width: 350px; }
-  .item-news__title {
-    color: #262626;
-    padding-top: 1rem;
-    text-transform: uppercase; }
-  .item-news__text {
-    padding-top: 1.5rem; }
-    .item-news__text p {
-      line-height: 1.7; }
-  .item-news__more {
-    align-items: center;
-    border-radius: 3rem;
-    display: flex;
-    font-size: 1.3rem;
-    height: 3rem;
-    margin-top: 2rem;
-    justify-content: center;
-    width: 10rem; }
-
 #blog-carousel {
   margin-top: 3rem; }
   #blog-carousel .item-news {
@@ -4852,7 +4827,7 @@ p {
   .breadcrumbs .B_lastCrumb {
     color: #f05525; }
   .breadcrumbs .separator {
-    margin: 0 1rem; }
+    margin: 0.1rem 1rem 0; }
 
 /* =/breadcrumbs
 ---------------------------*/
@@ -5064,24 +5039,64 @@ main ol,
   margin-top: 4rem;
   padding-top: 3rem; }
 
-.actions__list {
+.actions__list,
+.news__list {
   grid-column-gap: 5rem;
   grid-row-gap: 4rem;
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
-.item-action {
+.item-action,
+.item-news {
   background-color: #f7f6f2;
   padding: 2.2rem 1.7rem; }
-  .item-action__title {
+  .item-action__title,
+  .item-news__title {
     font-size: 1.4rem;
     text-transform: uppercase;
     margin: 1rem 0; }
-  .item-action .btn {
+  .item-action .btn,
+  .item-news .btn {
     font-size: 1.3rem; }
 
+.content .item-news {
+  margin-left: auto;
+  margin-right: auto; }
+
+.item-news {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #f7f6f2;
+  min-height: 270px;
+  padding: 3.1rem 12rem 0 1.5rem;
+  width: 350px; }
+  .item-news__title {
+    color: #262626;
+    text-transform: uppercase; }
+  .item-news__text {
+    padding-top: 1.5rem; }
+    .item-news__text p {
+      line-height: 1.7; }
+  .item-news__more {
+    align-items: center;
+    border-radius: 3rem;
+    display: flex;
+    font-size: 1.3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
+    width: 10rem; }
+  @media (max-width: 991px) {
+    .item-news {
+      width: 100%; } }
+  @media (max-width: 450px) {
+    .item-news {
+      min-height: 0;
+      padding-bottom: 2.5rem; } }
+
 @media (max-width: 767px) {
-  .item-action {
+  .item-action,
+  .item-news {
     margin-bottom: 2rem; } }
 
 div.pagination {
