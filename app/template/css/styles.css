@@ -5080,6 +5080,46 @@ main ol,
 #gallery-carousel .slick-next {
   right: -25px; }
 
+.producers__list {
+  grid-row-gap: 50px;
+  margin: 3.5rem 0; }
+  @media (max-width: 768px) {
+    .producers__list {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media (max-width: 350px) {
+    .producers__list {
+      display: block; } }
+
+.item-producer {
+  display: flex; }
+  .item-producer__link {
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 1.5rem;
+    display: flex;
+    height: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .item-producer__link:hover {
+      border-color: #f05525 !important; }
+  .item-producer img {
+    display: block; }
+  @media (max-width: 768px) {
+    .item-producer {
+      width: 33%; } }
+  @media (max-width: 550px) {
+    .item-producer {
+      width: 50%; } }
+  @media (max-width: 350px) {
+    .item-producer {
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .actions__list,
 .news__list {
   grid-column-gap: 5rem;
