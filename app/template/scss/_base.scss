@@ -271,6 +271,20 @@ p{
 		text-align: center;
 		width: auto;
 	}
+	&-inline{
+		background: none;
+		border: none;
+		height: auto;	
+		line-height: 1;	
+		padding: 0;	
+		color: $color4;
+		border-bottom: 1px dashed rgba(0,0,0,0);
+		cursor: pointer;	
+		&:hover{
+			border-bottom-color: $color4;
+		}
+
+	}
 }
 
 

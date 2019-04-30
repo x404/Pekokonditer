@@ -21,6 +21,12 @@
 	display: none;
 }
 
+.form-control{
+	&.error{
+		border-color: $color4 !important;
+	}
+}
+
 .ec-form{
 	.form-control{
 		@include placeholder(#fff);
@@ -36,9 +42,7 @@
 		&:disabled{
 			opacity: .7;
 		}
-		&.error{
-			border-color: $color4;
-		}
+
 		@media (max-width: 768px){
 			margin-top: 1.2rem;	
 		}
@@ -69,6 +73,9 @@
 		text-align: center;
 		@media (max-width: 768px){
 			font-size: 2.4rem;
+		}
+		@media (max-width: 350px){
+			font-size: 2.2rem;
 		}
 	}
 	.btn{
