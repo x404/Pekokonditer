@@ -412,3 +412,28 @@ main,
 label.error{
 	display: none !important;
 }
+
+
+
+// page error
+.page404{
+	.btn{
+		background-color: #fff;
+		border: 1px solid $color4;
+		color: $color4;
+		&:hover{
+			background-color: $color4;
+			color: $color2;
+		}
+	}
+}
+
+.pic404{
+	display: block;
+	margin: 5rem auto 3rem;
+	text-align: center;
+	max-width: 100%;
+	img{
+		max-width: 100%;
+	}
+}
