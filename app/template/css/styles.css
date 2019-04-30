@@ -3708,7 +3708,7 @@ p {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .review__text:before, .review__text:after, main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
+.before, .underline:after, .footer .shadow:before, .topline:before, .homepage .goods .container:before, .homepage .wrapper-more:before, #groups-carousel .group__pic:before, #groups-carousel .group__pic:after, .quote:before, .review__text:before, .faq__list .ec-message:before, .quote:after, .review__text:after, .faq__list .ec-message:after, main a[href$=".pdf"]:before, main a[href$=".xsl"]:before, main a[href$=".xslx"]:before, main a[href$=".doc"]:before, main a[href$=".docx"]:before,
 .text a[href$=".pdf"]:before,
 .text a[href$=".xsl"]:before,
 .text a[href$=".xslx"]:before,
@@ -4431,6 +4431,20 @@ p {
   .aboutus #aboutus-carousel {
     margin-top: 3.5rem; }
 
+.quote:before, .review__text:before, .faq__list .ec-message:before, .quote:after, .review__text:after, .faq__list .ec-message:after {
+  background: url(../images/quote.png) no-repeat left top;
+  font-size: 15rem;
+  height: 40px;
+  left: 82px;
+  line-height: 1;
+  top: 85px;
+  width: 51px; }
+
+.quote:after, .review__text:after, .faq__list .ec-message:after {
+  background-position: left bottom;
+  opacity: 0;
+  transition: opacity .3s; }
+
 .review__link {
   display: block;
   position: relative;
@@ -4465,18 +4479,6 @@ p {
   height: 15rem;
   padding: 4rem 1.8rem 2rem 17.8rem;
   position: relative; }
-  .review__text:before, .review__text:after {
-    background: url(../images/quote.png) no-repeat left top;
-    font-size: 15rem;
-    height: 40px;
-    left: 82px;
-    line-height: 1;
-    top: 85px;
-    width: 51px; }
-  .review__text:after {
-    background-position: left bottom;
-    opacity: 0;
-    transition: opacity .3s; }
 
 .producers {
   margin-top: 4rem;
@@ -5304,6 +5306,62 @@ div.pagination {
     margin-top: 2rem; }
   .comment-form .policy {
     margin-top: 3rem; }
+
+.alert-success {
+  text-align: center; }
+
+.ec-error {
+  display: none;
+  color: red;
+  margin-left: 1rem;
+  font-style: italic; }
+
+.ec-antispam {
+  display: none; }
+
+.has-error .ec-error {
+  display: block; }
+
+.faq__list #comment-form-placeholder {
+  margin-top: 3.5rem; }
+
+.faq__list .ec-message {
+  background-color: #f7f6f2;
+  border-radius: 1.5rem;
+  margin: 3.5rem 0;
+  min-height: 8rem;
+  padding: 2.8rem 1.5rem 1rem 9rem;
+  position: relative;
+  transition: background-color .3s; }
+  @media (max-width: 480px) {
+    .faq__list .ec-message {
+      padding-left: 7rem; } }
+  @media (max-width: 420px) {
+    .faq__list .ec-message {
+      padding-top: 1.5rem;
+      padding-left: 1.5rem; }
+      .faq__list .ec-message:before, .faq__list .ec-message:after {
+        display: none; } }
+  .faq__list .ec-message:before, .faq__list .ec-message:after {
+    left: 28px;
+    top: 29px;
+    transform: scale(0.5);
+    transform-origin: 0 0; }
+  .faq__list .ec-message:hover:after {
+    opacity: 1; }
+  .faq__list .ec-message-text {
+    cursor: pointer;
+    font-weight: bold; }
+    .faq__list .ec-message-text p {
+      display: inline-block;
+      margin: 0; }
+  .faq__list .ec-message__reply {
+    display: none;
+    padding-top: 1rem; }
+  .faq__list .ec-message.open:after {
+    opacity: 1; }
+  .faq__list .ec-message.open .ec-message-text p {
+    border-bottom-color: #fff; }
 
 /* =mobile-menu
 ---------------------------*/

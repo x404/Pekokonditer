@@ -1,0 +1,96 @@
+.alert-success{
+	text-align: center;
+}
+
+.ec{
+	&-error{
+		display: none;
+		color: red;
+		margin-left: 1rem;
+		font-style: italic;
+	}
+	&-antispam{
+		display: none;
+	}
+}
+
+.has-error{
+	.ec{
+		&-error{
+			display: block;
+		}
+	}
+}
+// faq
+.faq__list{
+	#comment-form-placeholder{
+		margin-top: 3.5rem;
+	}
+	.ec{
+		&-message{
+			background-color: $color7;
+			border-radius: 1.5rem;
+			margin: 3.5rem 0;
+			min-height: 8rem;
+			padding: 2.8rem 1.5rem 1rem 9rem;
+			position: relative;
+			transition: background-color .3s;
+			@extend .quote;
+
+			@media (max-width: 480px){
+				padding-left: 7rem;
+			}
+			@media (max-width: 420px){
+				padding-top: 1.5rem;
+				padding-left: 1.5rem;
+				&:before,
+				&:after{
+					display: none;
+				}
+			}
+
+			&:before,
+			&:after{
+				left: 28px;
+				top: 29px;
+				transform: scale(.5);
+				transform-origin: 0 0
+			}
+
+			&:hover{
+				&:after{
+					opacity: 1;
+				}
+			}
+			&-text{
+				cursor: pointer;
+				font-weight: bold;
+				p{
+					display: inline-block;
+					margin: 0;
+				}
+			}
+			&__reply{
+				display: none;
+				padding-top: 1rem;
+			}
+
+			&.open{
+				&:after{
+					opacity: 1;
+				}
+				.ec{
+					&-message{
+						&-text{
+							p{
+								border-bottom-color: $color2;
+							}
+						}
+						&__reply{
+						}
+					}
+				}
+			}
+		}
+	}
+}

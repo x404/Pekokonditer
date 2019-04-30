@@ -383,6 +383,26 @@
 	}
 }
 
+.quote{
+	&:before,
+	&:after{
+		@extend .before;
+		background: url(../images/quote.png) no-repeat left top;
+		font-size: 15rem;
+		height: 40px;
+		left: 82px;
+		line-height: 1;
+		top: 85px;
+		width: 51px;	
+	}
+
+	&:after{
+		background-position: left bottom;
+		opacity: 0;
+		transition: opacity .3s;
+	}
+}
+
 .review{
 	&__link{
 		display: block;
@@ -423,23 +443,7 @@
 		height: 15rem;
 		padding: 4rem 1.8rem 2rem 17.8rem;
 		position: relative;
-		&:before,
-		&:after{
-			@extend .before;
-			background: url(../images/quote.png) no-repeat left top;
-			font-size: 15rem;
-			height: 40px;
-			left: 82px;
-			line-height: 1;
-			top: 85px;
-			width: 51px;	
-		}
-
-		&:after{
-			background-position: left bottom;
-			opacity: 0;
-			transition: opacity .3s;
-		}
+		@extend .quote;
 	}
 }
 // =/aboutus
