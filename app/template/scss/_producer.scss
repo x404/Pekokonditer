@@ -15,5 +15,55 @@
 		}
 	}
 
+	div.pagination{
+		margin: 2.5rem 0;
+		ul{
+			margin: 0;
+		}
+	}
+}
 
+.cat-submenu{
+	margin: 3rem 0 4rem;
+	ul{
+		display: flex;
+		li{
+			margin-right: 2rem;
+			&:last-child{
+				margin-right: 0;
+			}
+			a{
+				display: block;
+				border: 1px solid $color11;
+				height: 3.5rem;
+				padding: 0 1.2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:hover{
+					border-color: $color4;
+					color: $color4;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+.panel{
+	.view{
+		a{
+			display: block;
+			margin-right: 2rem;
+			filter: grayscale(1) brightness(3) invert(1);
+			&.current,
+			&:hover{
+				filter: none;
+			}
+		}
+	}
+	.show{
+		margin-left: 1.8rem;
+	}
 }

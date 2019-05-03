@@ -505,6 +505,10 @@ label.error{
 					@extend .active-link
 				}
 
+				ul{
+					display: none;
+				}
+
 				&.open{
 					& > a,
 					& > span{
@@ -512,6 +516,9 @@ label.error{
 							transform: rotate(90deg);
 							filter: none;
 						}
+					}
+					& > ul{
+						display: block;
 					}
 				}
 			}
@@ -541,13 +548,6 @@ label.error{
 				}
 				ul{
 					padding-left: 1.8rem;
-				}
-
-				&.active{
-					// & > a,
-					// & > span{
-					// 	@extend .active-link
-					// }
 				}
 
 				& > ul{
