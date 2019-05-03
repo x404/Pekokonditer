@@ -303,7 +303,7 @@
 			<!-- =/breadcrumbs -->
 			<div class="content">
 				<!-- InstanceBeginEditable name="EditRegion5" -->
-				<div class="row page-brand">
+				<div class="row page-brand-cat">
 					<aside class="aside col-lg-3 col-md-4">
 						<div class="aside__menu">
 							<p class="title">производители</p>
@@ -359,22 +359,20 @@
 							<select name="menu" id="selectmenu" class="aside__menu-select d-md-none">
 								<option value="">Красный Октябрь (315)</option>
 								<option value="">Аленка (210)</option>
-								<ul>
-									<option>- конфеты (15)</option>
-									<option value="">- шоколад (56)</option>
-									<option value="">-- молочный (11)</option>
-									<option value="" selected="selected">-- белый (15)</option>
-									<option value="">-- темный (12)</option>
-									<option value="">-- горький (18)</option>
-									<option value="">- зефир (15)</option>
-									<option value="">- мармелад (14)</option>
-									<option value="">- халва (11)</option>
-									<option value="">- вафли (14)</option>
-									<option value="">- пряники (25)</option>
-									<option value="">- печенье (18)</option>
-									<option value="">- торты (24)</option>
-									<option value="">- бисквиты (18)</option>	
-								</ul>
+								<option>- конфеты (15)</option>
+								<option value="">- шоколад (56)</option>
+								<option value="">-- молочный (11)</option>
+								<option value="" selected="selected">-- белый (15)</option>
+								<option value="">-- темный (12)</option>
+								<option value="">-- горький (18)</option>
+								<option value="">- зефир (15)</option>
+								<option value="">- мармелад (14)</option>
+								<option value="">- халва (11)</option>
+								<option value="">- вафли (14)</option>
+								<option value="">- пряники (25)</option>
+								<option value="">- печенье (18)</option>
+								<option value="">- торты (24)</option>
+								<option value="">- бисквиты (18)</option>
 								<option value="">РотФронт (158)</option>
 								<option value="">Бабаевский (144)</option>
 							</select>
@@ -411,13 +409,13 @@
 
 
 							<!-- =panel -->
-							<div class="panel topline-solid d-flex justify-content-between">
+							<div class="panel topline-solid d-flex justify-content-between align-items-center ">
 								<div class="view d-flex">
 									<a href="/?type=grid" class="view-grid current"><img src="/template/images/view-grid.png" alt=""></a>
 									<a href="/?type=list" class="view-list"><img src="/template/images/view-list.png" alt=""></a>
 								</div>
 								<div class="right d-flex">
-									<div class="sort">
+									<div class="sort d-flex align-items-center">
 										сортировать
 										<select name="sort" id="sort">
 											<option value="name">имя</option>
@@ -425,7 +423,7 @@
 											<option value="rating">рейтинг</option>
 										</select>
 									</div>
-									<div class="show">
+									<div class="show d-flex align-items-center">
 										показывать
 										<select name="show" id="show">
 											<option value="6">6 поз.</option>
@@ -443,7 +441,7 @@
 
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-1.jpg" alt="">
+											<img src="images/product-1.jpg" alt="">
 											<div class="product__shortdesc radius-2 text-center">
 												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
 											</div>
@@ -456,7 +454,7 @@
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-2.jpg" alt="">
+											<img src="images/product-2.jpg" alt="">
 										</div>
 										<div class="product__title">Шоколад</div>
 										<div class="product__price">
@@ -466,7 +464,7 @@
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-3.jpg" alt="">
+											<img src="images/product-3.jpg" alt="">
 											<div class="product__shortdesc radius-2 text-center">
 												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
 											</div>
@@ -483,7 +481,7 @@
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-4.jpg" alt="">
+											<img src="images/product-4.jpg" alt="">
 										</div>
 										<div class="product__title">мармелад</div>
 										<div class="product__price">
@@ -494,7 +492,7 @@
 
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-5.jpg" alt="">
+											<img src="images/product-5.jpg" alt="">
 										</div>
 										<div class="product__title">халва</div>
 										<div class="product__price">
@@ -507,7 +505,7 @@
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
-											<img src="images/cat-6.jpg" alt="">
+											<img src="images/product-6.jpg" alt="">
 										</div>
 										<div class="product__title">вафли</div>
 										<div class="product__price">
@@ -698,14 +696,20 @@
 <script src="/template/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion3" -->
 <link rel="stylesheet" property="stylesheet" href="template/css/jquery.fancybox.min.css">
-
-<script src="//yastatic.net/share2/share.js"></script>
+<link rel="stylesheet" href="/template/css/selectize.css">   
+<script src="/template/js/selectize.min.js"></script>
 <script>
 	document.querySelector('#selectmenu').onchange = function (e) {
 		url = this.value;
 		window.location.href = url;
 	}
+
+	$(document).ready(function(){
+		$('#sort').selectize();
+		$('#show').selectize()
+	})
 </script>
+<script src="//yastatic.net/share2/share.js"></script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

@@ -5591,16 +5591,20 @@ div.pagination {
   font-weight: bold;
   font-size: 1.6rem; }
 
-.page-brand h1 {
+.page-brand h1,
+.page-brand-cat h1 {
   line-height: 1.8;
   padding: 1.7rem 0; }
 
-.page-brand .main {
+.page-brand .main,
+.page-brand-cat .main {
   padding-left: 2rem; }
 
-.page-brand div.pagination {
+.page-brand div.pagination,
+.page-brand-cat div.pagination {
   margin: 2.5rem 0; }
-  .page-brand div.pagination ul {
+  .page-brand div.pagination ul,
+  .page-brand-cat div.pagination ul {
     margin: 0; }
 
 .cat-submenu {
@@ -5624,15 +5628,22 @@ div.pagination {
           color: #f05525;
           text-decoration: none; }
 
-.panel .view a {
-  display: block;
-  margin-right: 2rem;
-  filter: grayscale(1) brightness(3) invert(1); }
-  .panel .view a.current, .panel .view a:hover {
-    filter: none; }
+.panel {
+  padding-top: 1.7rem; }
+  .panel .view a {
+    display: block;
+    margin-right: 2rem;
+    filter: grayscale(1) brightness(3) invert(1); }
+    .panel .view a.current, .panel .view a:hover {
+      filter: none; }
+  .panel .show {
+    margin-left: 1.8rem; }
 
-.panel .show {
-  margin-left: 1.8rem; }
+.page-brand-cat div.goods-brand {
+  margin-top: 1rem; }
+
+.page-brand-cat .cat-submenu {
+  margin: 3rem 0 2.7rem; }
 
 /* =mobile-menu
 ---------------------------*/

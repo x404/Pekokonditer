@@ -3,7 +3,9 @@
 	font-size: 1.6rem;
 }
 
-.page-brand{
+.page-brand,
+.page-brand-cat
+{
 	h1{
 		line-height: 1.8;
 		padding: 1.7rem 0;
@@ -52,6 +54,7 @@
 
 
 .panel{
+	padding-top: 1.7rem;
 	.view{
 		a{
 			display: block;
@@ -65,5 +68,16 @@
 	}
 	.show{
 		margin-left: 1.8rem;
+	}
+}
+
+
+.page-brand-cat{ 
+	div.goods-brand{
+		margin-top: 1rem;
+	}
+
+	.cat-submenu{
+		margin: 3rem 0 2.7rem;
 	}
 }
