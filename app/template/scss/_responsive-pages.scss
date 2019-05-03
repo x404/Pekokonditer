@@ -72,6 +72,28 @@
 			width: 270px;
 		}
 	}
+
+
+	.page-brand{
+		.goods{
+			&-wrapper{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.product__item{
+				margin-bottom: 3rem;
+				width: 200px;
+				img{
+					width: 75%;
+				}
+
+				.label{
+					font-size: 1.2rem;
+					width: 45%;
+				}
+			}
+		}
+	}
 }
 
 
@@ -82,6 +104,19 @@
 	#groups-carousel2{
 		display: none !important;
 	}	
+
+	.page-brand{
+		.goods{
+			&-wrapper{
+				justify-content: space-between;
+			}
+			.product__item{
+				margin-left: 0;
+				margin-right: 0;
+				width: 225px;
+			}
+		}
+	}
 }
 
 
