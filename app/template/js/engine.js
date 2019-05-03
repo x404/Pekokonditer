@@ -393,7 +393,7 @@ window.onload = function(){
 	[].forEach.call(document.querySelectorAll('.btn-search'),function(el,i){
 		el.addEventListener('click', function() {
 			// document.querySelector('.header__right').classList.toggle('search-show');
-			console.log(this);
+			// console.log(this);
 			this.parentElement.classList.toggle('search-show');
 			this.classList.toggle('btn-search-close');
 		});		

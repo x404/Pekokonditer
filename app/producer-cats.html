@@ -411,15 +411,15 @@
 							<!-- =panel -->
 							<div class="panel topline-solid d-flex justify-content-between align-items-center ">
 								<div class="view d-flex">
-									<a href="/?type=grid" class="view-grid current"><img src="/template/images/view-grid.png" alt=""></a>
-									<a href="/?type=list" class="view-list"><img src="/template/images/view-list.png" alt=""></a>
+									<a href="/?type=grid" class="view-btn current" data-class="grid"><img src="/template/images/view-grid.png" alt=""></a>
+									<a href="/?type=list" class="view-btn" data-class="list"><img src="/template/images/view-list.png" alt=""></a>
 								</div>
 								<div class="right d-flex">
 									<div class="sort d-flex align-items-center">
 										сортировать
 										<select name="sort" id="sort">
 											<option value="name">имя</option>
-											<option value="price">цена</option>
+											<option value="price" selected="">цена</option>
 											<option value="rating">рейтинг</option>
 										</select>
 									</div>
@@ -428,7 +428,7 @@
 										<select name="show" id="show">
 											<option value="6">6 поз.</option>
 											<option value="12">12 поз.</option>
-											<option value="18">18 поз.</option>
+											<option value="18" selected="">18 поз.</option>
 										</select>
 									</div>
 								</div>
@@ -446,21 +446,31 @@
 												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
 											</div>
 										</div>
-										<div class="product__title">конфеты</div>
-										<div class="product__price">
-											<span>от</span> 56<i class="rur">i</i>
+										<div class="product__desc">
+											<div class="product__title">Шоколад Бабаевский фирменный</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 56<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
 											<img src="images/product-2.jpg" alt="">
 										</div>
-										<div class="product__title">Шоколад</div>
-										<div class="product__price">
-											<span>от</span> 68<i class="rur">i</i>
+										<div class="product__desc">
+											<div class="product__title">Шоколад Бабаевский слава</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 68<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
@@ -469,49 +479,69 @@
 												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
 											</div>
 										</div>
-										<div class="product__title">зефир</div>
-										<div class="product__price">
-											<span>от</span> 68<i class="rur">i</i>
-										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
-										<div class="labels">
-											<div class="label label-sale">распродажа</div>
-											<div class="label label-sale">популярное</div>
+										<div class="product__desc">
+											<div class="product__title">Шоколад Бабаевский люкс</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 68<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
+											<div class="labels">
+												<div class="label label-sale">распродажа</div>
+												<div class="label label-sale">популярное</div>
+											</div>
 										</div>
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
 											<img src="images/product-4.jpg" alt="">
 										</div>
-										<div class="product__title">мармелад</div>
-										<div class="product__price">
-											<span>от</span> 33<i class="rur">i</i>
+										<div class="product__desc">
+											<div class="product__title">Батончик Бабаевский с помадно-сливочной начинкой</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 33<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 									</div>
 
 									<div class="product__item">
 										<div class="product__pic radius-2">
 											<img src="images/product-5.jpg" alt="">
 										</div>
-										<div class="product__title">халва</div>
-										<div class="product__price">
-											<span>от</span> 59<i class="rur">i</i>
-										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
-										<div class="labels">
-											<div class="label label-sale">новинка</div>
+										<div class="product__desc">
+											<div class="product__title">Шоколад Бабаевский Ореховый</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 59<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
+											<div class="labels">
+												<div class="label label-sale">новинка</div>
+											</div>
 										</div>
 									</div>
 									<div class="product__item">
 										<div class="product__pic radius-2">
 											<img src="images/product-6.jpg" alt="">
 										</div>
-										<div class="product__title">вафли</div>
-										<div class="product__price">
-											<span>от</span> 45<i class="rur">i</i>
+										<div class="product__desc">
+											<div class="product__title">Шоколад Вдохновение классический</div>
+											<div class="product__shortdesc">
+												<p>При слове «конфеты» будто слышится шуршание фантиков и мерещится чарующий сладкий аромат. Каждый представляет свое любимое: карамель, ириски, леденцы, шоколадные в коробках... Но такое изобилие вариантов было далеко не всегда ...</p>
+											</div>
+											<div class="product__price">
+												<span>от</span> 45<i class="rur">i</i>
+											</div>
+											<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 										</div>
-										<a href="#" class="btn btn-white btn-hover-orange center-block">подробнее</a>
 									</div>									
 								</div>
 							</div>
@@ -699,6 +729,21 @@
 <link rel="stylesheet" href="/template/css/selectize.css">   
 <script src="/template/js/selectize.min.js"></script>
 <script>
+	[].forEach.call(document.querySelectorAll('.view-btn'),function(el,i){
+		el.addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('.view-btn.current').classList.remove('current');
+			this.classList.add('current');
+			$class = this.dataset.class;
+			document.querySelector('.goods-wrapper').classList.remove('list');
+			document.querySelector('.goods-wrapper').classList.add($class);
+
+			// дополняем адресную строку
+			history.pushState({param: 'Value'}, '', location.protocol + '//' + location.host + location.pathname + '?view=' + $class);
+		});		
+	});
+
+
 	document.querySelector('#selectmenu').onchange = function (e) {
 		url = this.value;
 		window.location.href = url;
@@ -708,6 +753,8 @@
 		$('#sort').selectize();
 		$('#show').selectize()
 	})
+
+
 </script>
 <script src="//yastatic.net/share2/share.js"></script>
 <!-- InstanceEndEditable -->

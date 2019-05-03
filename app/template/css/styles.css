@@ -5630,11 +5630,11 @@ div.pagination {
 
 .panel {
   padding-top: 1.7rem; }
-  .panel .view a {
+  .panel .view-btn {
     display: block;
     margin-right: 2rem;
     filter: grayscale(1) brightness(3) invert(1); }
-    .panel .view a.current, .panel .view a:hover {
+    .panel .view-btn.current, .panel .view-btn:hover {
       filter: none; }
   .panel .show {
     margin-left: 1.8rem; }
@@ -5644,6 +5644,33 @@ div.pagination {
 
 .page-brand-cat .cat-submenu {
   margin: 3rem 0 2.7rem; }
+
+.goods .list {
+  display: block !important; }
+  .goods .list .product__item {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 4.2rem; }
+    .goods .list .product__item .btn {
+      margin-left: 0; }
+  .goods .list .product__pic {
+    flex-shrink: 0;
+    width: 268px; }
+    .goods .list .product__pic .product__shortdesc {
+      display: none !important; }
+  .goods .list .product__desc {
+    padding-left: 2.4rem; }
+    .goods .list .product__desc .product__shortdesc {
+      background: none;
+      border-top: 2px solid #eee;
+      color: #262626;
+      opacity: 1;
+      padding: 2rem 0;
+      position: static; }
+  .goods .list .product__title {
+    text-align: left; }
+  .goods .list .product__price {
+    text-align: left; }
 
 /* =mobile-menu
 ---------------------------*/
