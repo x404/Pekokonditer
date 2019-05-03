@@ -59,6 +59,11 @@
 		width: 160px;
 	}
 
+	.panel{
+		.view{
+			display: none !important;
+		}
+	}
 	.goods{
 		.nav li{
 			margin: 0 .5rem;
@@ -66,10 +71,45 @@
 				width: 150px;
 			}
 		}
-		.product__item{
-			margin-left: auto;
-			margin-right: auto;
-			width: 270px;
+		.product{
+			&__item{
+				margin-left: auto;
+				margin-right: auto;
+				width: 270px;
+				margin-bottom: 4.2rem;
+			}
+			&__desc{
+				.product__shortdesc{
+					background: none;
+					border-top: 2px solid #eee;
+					color: $color3;
+					opacity: 1;
+					padding: 2rem 0;
+					position: static;
+					text-align: center;
+				}
+			}
+		}
+
+		// view list
+
+		.list{
+			.product{
+				&__item{
+					display: block;
+					.btn{
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				&__title,
+				&__desc,
+				&__price{
+					padding-left: 0;
+					text-align: center;
+				}
+
+			}
 		}
 	}
 
@@ -91,6 +131,31 @@
 					font-size: 1.2rem;
 					width: 45%;
 				}
+			}
+		}
+	}
+
+	.cat-submenu ul{
+		flex-wrap: wrap;
+		li{
+			margin-bottom: 1rem;
+			width: 45%;
+		}
+	}
+
+	.panel{
+		display: block !important;
+		.view{
+			margin-bottom: 2rem;
+		}
+		.right{
+			display: block !important;
+			.show{
+				margin-left: 0;
+			}
+			span{
+				display: block;
+				width: 90px;
 			}
 		}
 	}
@@ -147,7 +212,60 @@
 			margin-right: auto;
 		}
 	}
+
+
+	.panel{
+		.right{
+			display: flex !important;
+			.show{
+				margin-left: 1.5rem;
+			}
+			span{
+				display: block;
+				width: auto;				
+			}
+		}
+	}
 }
+
+
+@media (max-width: 550px){
+	.panel{
+		display: block !important;
+		.view{
+			margin-bottom: 2rem;
+		}
+		.right{
+			display: block !important;
+			.show{
+				margin-left: 0;
+			}
+			span{
+				display: block;
+				width: 90px;				
+			}
+		}
+	}
+
+	.cat-submenu ul li{
+		margin-left: auto;
+		margin-right: auto !important;
+		width: 80%;
+	}
+
+	.panel{
+		.right{
+			.show,
+			.sort{
+				justify-content: center;
+			}
+			.sort{
+				margin-bottom: .5rem;
+			}
+		}
+	}
+}
+
 
 
 @media (max-width: 450px){
@@ -194,4 +312,13 @@
 	.feedback{
 		margin-top: 3rem;
 	}
+
+	.page-brand,
+	.page-brand-cat{
+		.main{
+			padding-left: 0;
+		}
+	}
 }
+
+
