@@ -6018,7 +6018,7 @@ div.pagination {
   .content .text {
     text-align: justify; }
   .share li {
-    margin-bottom: .5rem; } }
+    margin-bottom: .5rem !important; } }
 
 @media (max-width: 400px) {
   .header .sisea-search-form .form-control,
