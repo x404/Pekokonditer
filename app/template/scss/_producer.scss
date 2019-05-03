@@ -8,7 +8,7 @@
 {
 	h1{
 		line-height: 1.8;
-		padding: 1.7rem 0;
+		padding: 1.6rem 0;
 	}
 	.main{
 		padding-left: 2rem;
@@ -55,6 +55,8 @@
 
 .panel{
 	padding-top: 1.7rem;
+	padding-bottom: 1.7rem;
+	margin-top: 0;
 	.view{
 		&-btn{
 			display: block;
@@ -74,11 +76,16 @@
 
 .page-brand-cat{ 
 	div.goods-brand{
-		margin-top: 1rem;
+		margin-top: 0;
 	}
 
 	.cat-submenu{
 		margin: 3rem 0 2.7rem;
+	}
+
+	.goods{
+		position: relative;
+		z-index: 1;
 	}
 }
 

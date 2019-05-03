@@ -4899,7 +4899,8 @@ main h1, main h2, main h3, main h4,
 .text h2,
 .text h3,
 .text h4 {
-  font-weight: bold; }
+  font-weight: bold;
+  padding-bottom: .5rem; }
 
 main p,
 .text p {
@@ -5594,7 +5595,7 @@ div.pagination {
 .page-brand h1,
 .page-brand-cat h1 {
   line-height: 1.8;
-  padding: 1.7rem 0; }
+  padding: 1.6rem 0; }
 
 .page-brand .main,
 .page-brand-cat .main {
@@ -5629,7 +5630,9 @@ div.pagination {
           text-decoration: none; }
 
 .panel {
-  padding-top: 1.7rem; }
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  margin-top: 0; }
   .panel .view-btn {
     display: block;
     margin-right: 2rem;
@@ -5640,10 +5643,14 @@ div.pagination {
     margin-left: 1.8rem; }
 
 .page-brand-cat div.goods-brand {
-  margin-top: 1rem; }
+  margin-top: 0; }
 
 .page-brand-cat .cat-submenu {
   margin: 3rem 0 2.7rem; }
+
+.page-brand-cat .goods {
+  position: relative;
+  z-index: 1; }
 
 .goods .list {
   display: block !important; }

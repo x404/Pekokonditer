@@ -132,14 +132,16 @@
   /*background: #ffffff;*/
   height: 35px;
   /*cursor: text;*/
-  display: inline-block;
+  /*display: inline-block;*/
 }
 .selectize-input {
 	color: #262626;
 	font-size: 14px;
   padding: 9px 8px 10px 0;
   border: 1px solid #e5e5e5;
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block;
+  
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -254,7 +256,7 @@
 .selectize-dropdown { 
   box-shadow: 0 0 7px rgba(0,0,0,.25);
   position: absolute;
-  z-index: 100;
+  z-index: 999;
   /*border: 1px solid #d0d0d0;*/
   background: #ffffff;
   margin: 1px 0 0 0;
