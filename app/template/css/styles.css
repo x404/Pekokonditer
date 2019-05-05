@@ -5445,6 +5445,7 @@ div.pagination {
   padding-top: 3rem; }
   .comment-form h3 {
     font-size: 3rem;
+    font-weight: normal;
     text-align: center; }
     @media (max-width: 768px) {
       .comment-form h3 {
@@ -5939,6 +5940,14 @@ div.pagination {
   top: 0;
   bottom: 0;
   right: 0; }
+
+.similar-products {
+  border-top: 2px solid #eee;
+  margin-top: 4.2rem;
+  padding-top: 4rem; }
+  .similar-products .product__item {
+    margin-left: auto;
+    margin-right: auto; }
 
 /* =mobile-menu
 ---------------------------*/
