@@ -3714,7 +3714,7 @@ p {
 .text a[href$=".xslx"]:before,
 .text a[href$=".doc"]:before,
 .text a[href$=".docx"]:before, main ul li:before,
-.text ul li:before, #gallery-carousel a:before, #gallery-carousel a:after, .aside__menu ul li a:before, .aside__visual .visual__item:before, .card-details .mainpic:before, .card-details .params:before {
+.text ul li:before, #gallery-carousel a:before, #gallery-carousel a:after, .aside__menu ul li a:before, .aside__visual .visual__item:before, .page-card .reviews__list .reviews__item:before, .card-details .mainpic:before, .card-details .params:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3843,13 +3843,13 @@ input::-webkit-inner-spin-button {
 
 .btn-search {
   background-image: url(../images/sprite.png);
-  background-position: -49px 0px;
+  background-position: -25px -25px;
   width: 20px;
   height: 19px;
   padding: 0; }
   .btn-search-close {
     background-image: url(../images/sprite.png);
-    background-position: -22px -25px;
+    background-position: -49px -21px;
     width: 20px;
     height: 19px; }
 
@@ -5693,6 +5693,52 @@ div.pagination {
     text-align: left; }
   .goods .list .product__price {
     text-align: left; }
+
+.page-card .nav-tabs {
+  margin-top: 4.5rem;
+  padding-top: 4rem; }
+  .page-card .nav-tabs li {
+    margin-top: 0;
+    padding-left: 3.6rem; }
+    .page-card .nav-tabs li:first-child {
+      padding-left: 0; }
+    .page-card .nav-tabs li .btn {
+      margin-top: 0; }
+    .page-card .nav-tabs li:before {
+      display: none; }
+    .page-card .nav-tabs li .active {
+      border: 1px solid #f05525;
+      background-color: #f05525;
+      color: #fff; }
+    .page-card .nav-tabs li a:hover {
+      border: 1px solid #f05525; }
+
+.page-card .tab-content {
+  margin-top: 3.3rem; }
+
+.page-card .reviews__list .reviews__item {
+  background-color: #f7f6f2;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+  padding: 2.5rem 1rem 1rem 8.7rem;
+  position: relative; }
+  .page-card .reviews__list .reviews__item:before {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -25px;
+    width: 25px;
+    height: 20px;
+    left: 28px;
+    top: 28px; }
+
+.page-card .review__meta {
+  margin-bottom: .7rem; }
+
+.page-card .review__meta, .page-card .review__text {
+  padding-left: 0;
+  min-height: 0;
+  padding: 0; }
+  .page-card .review__meta:before, .page-card .review__meta:after, .page-card .review__text:before, .page-card .review__text:after {
+    display: none; }
 
 .card-details .media {
   width: 480px; }

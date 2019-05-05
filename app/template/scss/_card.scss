@@ -1,3 +1,71 @@
+.page-card{
+	.nav-tabs{
+		margin-top: 4.5rem;
+		padding-top: 4rem;
+		li{
+			margin-top: 0;
+			padding-left: 3.6rem;
+			&:first-child{
+				padding-left: 0;
+			}
+			.btn{
+				margin-top: 0;
+			}
+			&:before{
+				display: none;
+			}
+			.active{
+				border: 1px solid $color4;
+				background-color: $color4;
+				color: $color2;
+			}
+			a:hover{
+				border: 1px solid $color4;
+			}
+		}
+	}
+
+	.tab-content{
+		margin-top: 3.3rem;
+	}
+
+	.reviews__list{
+		.reviews{
+			&__item{
+				background-color: $color7;
+				border-radius: 1.5rem;
+				margin-top: 3rem;
+				padding: 2.5rem 1rem 1rem 8.7rem;
+				position: relative;
+				&:before{
+					@include sprite($icon-quote-sm);
+					@extend .before;
+					left: 28px;
+					top: 28px;
+				}
+			}
+		}
+	}
+
+	.review{
+		&__meta{
+			margin-bottom: .7rem;
+		}
+
+		&__meta,
+		&__text{
+			padding-left: 0;
+			min-height: 0;
+			padding: 0;
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+
+
 .card-details{
 	.media{
 		width: 480px;
