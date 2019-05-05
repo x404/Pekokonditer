@@ -26,6 +26,9 @@
 	#product-carousel{
 		display: flex;
 		margin-top: 2.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		width: 415px;
 		&.slick-initialized{
 			display: block;
 		}
@@ -79,6 +82,7 @@
 	.characteristics{
 		&-item{
 			margin-bottom: 1.2rem;
+			position: relative;
 			a{
 				border-bottom-color: rgba(0,0,0,0);
 				&:hover{
@@ -225,4 +229,33 @@
 			margin-bottom: 1.2rem;
 		}
 	}
+}
+
+.infomodal{
+	background-color: #666;
+	border-radius: 1.2rem;
+	color: $color2;
+	font-size: 1.3rem;
+	left: 0;
+	padding: 1.2rem 1.5rem;
+	position: absolute;
+	top: 2.5rem;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity .3s;
+	.infomodal-title{
+		margin-bottom: .5rem;
+	}
+	&.show{
+		opacity: 1;
+		z-index: 999;
+	}
+}
+
+.transparent-overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
 }
