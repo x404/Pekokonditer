@@ -28,7 +28,7 @@
 		margin-top: 2.5rem;
 		margin-left: auto;
 		margin-right: auto;
-		width: 415px;
+		width: 425px;
 		&.slick-initialized{
 			display: block;
 		}
@@ -76,12 +76,13 @@
 	}
 	.description{
 		padding-left: 2.5rem;
+		margin-top: 1rem;
 		flex-grow: 1;
 	}
 
 	.characteristics{
 		&-item{
-			margin-bottom: 1.2rem;
+			margin-bottom: .9rem;
 			position: relative;
 			a{
 				border-bottom-color: rgba(0,0,0,0);
@@ -105,7 +106,7 @@
 		margin-top: 2rem;
 	}
 	.prices__item{
-		margin-bottom: 1.5rem;
+		margin-bottom: .9rem;
 	}
 	.item-prices{
 		display: flex;
@@ -154,6 +155,7 @@
 			position: relative;
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 1.5rem;
 			width: 14rem;
 		}
 
@@ -208,6 +210,7 @@
 		.product__submit{
 			margin-left: auto;
 			margin-right: auto;
+			height: 40px;
 			width: 115px;
 			&:hover{
 				background-color: $color2;
@@ -226,7 +229,7 @@
 	.param{
 		&__title{
 			font-size: 1.7rem;
-			margin-bottom: 1.2rem;
+			margin-bottom: 1.5rem;
 		}
 	}
 }

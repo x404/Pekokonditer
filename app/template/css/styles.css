@@ -5718,7 +5718,7 @@ div.pagination {
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 415px; }
+  width: 425px; }
   .card-details #product-carousel.slick-initialized {
     display: block; }
   .card-details #product-carousel .slick-slide {
@@ -5755,10 +5755,11 @@ div.pagination {
 
 .card-details .description {
   padding-left: 2.5rem;
+  margin-top: 1rem;
   flex-grow: 1; }
 
 .card-details .characteristics-item {
-  margin-bottom: 1.2rem;
+  margin-bottom: .9rem;
   position: relative; }
   .card-details .characteristics-item a {
     border-bottom-color: rgba(0, 0, 0, 0); }
@@ -5778,7 +5779,7 @@ div.pagination {
   margin-top: 2rem; }
 
 .card-details .prices__item {
-  margin-bottom: 1.5rem; }
+  margin-bottom: .9rem; }
 
 .card-details .item-prices {
   display: flex;
@@ -5814,6 +5815,7 @@ div.pagination {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5rem;
     width: 14rem; }
   .card-details .params .form-control {
     border-radius: 4rem;
@@ -5851,6 +5853,7 @@ div.pagination {
   .card-details .params .product__submit {
     margin-left: auto;
     margin-right: auto;
+    height: 40px;
     width: 115px; }
     .card-details .params .product__submit:hover {
       background-color: #fff;
@@ -5864,7 +5867,7 @@ div.pagination {
 
 .card-details .param__title {
   font-size: 1.7rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.5rem; }
 
 .infomodal {
   background-color: #666;
