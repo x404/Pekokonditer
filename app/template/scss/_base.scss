@@ -207,11 +207,29 @@ p{
 }
 
 
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+	-moz-appearance: number-input;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
 .d-center{
 	margin-left: auto;
 	margin-right: auto;
 }
 
+
+.rotate180{
+	transform: rotate(180deg);
+}
 
 .btn{
 	align-items: center;

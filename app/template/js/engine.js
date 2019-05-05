@@ -323,13 +323,45 @@ $(document).ready(function(){
 	});
 
 
-	// $('.fancybox-media, .fancybox').fancybox({
-	// 	openEffect  : 'none',
-	// 	closeEffect : 'none',
-	// 	helpers : {
-	// 		fancybox-mediamedia : {}
-	// 	}
-	// });
+	$('#product-carousel').slick({
+		slidesToShow: 4,
+		dots: false,
+		slidesToScroll: 1,
+		arrows: true,
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		responsive: [
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false
+				}
+			}
+		]
+	});	
 
 
 	// mobile-menu

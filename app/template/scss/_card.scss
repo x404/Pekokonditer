@@ -1,0 +1,228 @@
+.card-details{
+	.media{
+		width: 480px;
+	}
+
+	.mainpic{
+		background: $color12;
+		display: flex;
+		height: 480px;
+		width: 480px;
+		position: relative;
+		&:before{
+			@extend .before;
+			border: 1px solid $color12;
+			height: 484px;
+			left: -2px;
+			top: -2px;
+			width: 484px;
+		}
+		img{
+			display: block;
+			margin: auto;			
+		}
+	}
+
+	#product-carousel{
+		display: flex;
+		margin-top: 2.5rem;
+		&.slick-initialized{
+			display: block;
+		}
+		.slick{
+			&-slide{
+				text-align: center;
+				img{
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+		.product-thumb{
+			border: 1px solid #f6f5f1;
+			height: 86px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 86px;
+			transition: border-color .3s;
+			&:hover{
+				border-color: $color4;
+			}
+		}
+		a{
+			background-color: #f6f5f1;
+			border: none;
+			display: flex;
+			height: 82px;
+			margin-left: 1px;
+			margin-top: 1px;
+			position: relative;
+			img{
+				line-height: 86px;
+				margin: auto;
+			}
+			&:before{
+				// @extend .before;
+				border: 1px solid red;
+				left: -2px;
+				top: -2px;
+				height: 86px;
+				width: 86px;
+			}
+		}
+	}
+	.description{
+		padding-left: 2.5rem;
+		flex-grow: 1;
+	}
+
+	.characteristics{
+		&-item{
+			margin-bottom: 1.2rem;
+			a{
+				border-bottom-color: rgba(0,0,0,0);
+				&:hover{
+					border-bottom: 1px dashed $color4;
+				}
+			}
+		}
+		.title{
+			font-weight: bold;
+			width: 11rem;
+		}
+		.field{
+			margin-left: 2rem;
+		}
+	}
+
+	.list__prices{
+		border-top: 1px solid $color8;
+		padding-top: 2rem;
+		margin-top: 2rem;
+	}
+	.prices__item{
+		margin-bottom: 1.5rem;
+	}
+	.item-prices{
+		display: flex;
+		align-items: flex-end;
+		&__title{
+			font-size: 1.8rem;
+			width: 12rem;
+			span{
+				font-size: 1.4rem;
+			}
+		}
+		&__value{
+			line-height: 1.2;
+			.price{
+				color: $color4;
+				font-weight: bold;
+				font-size: 3rem;
+			}
+		}			
+	}
+
+
+	// params
+	.params{
+		background-color: $color12;
+		position: relative;
+		padding: 3.5rem;
+		form{
+			position: relative;
+		}
+		&:before{
+			@extend .before;
+			border: 1px solid $color12;
+			left: -2px;
+			top: -2px;
+			width: calc(100% + 4px);
+			height: calc(100% + 4px)
+		}
+
+		.title{
+			font-size: 1.7rem;
+			margin-bottom: 4rem;
+		}
+
+		.product__count{
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: 14rem;
+		}
+
+		.form-control{
+			border-radius: 4rem;
+			border: none;
+			font-size: 1.8rem;
+			height: 4rem;
+			// margin-bottom: 2.5rem;
+			padding: 0;
+			text-align: center;
+			width: 100%;
+		}
+
+
+		.sum,
+		.price{
+			color: $color4;
+			font-size: 3rem;
+			font-weight: bold;
+			padding-bottom: .5rem;
+		}
+		.sum{
+			border-bottom: 1px solid $color1
+		}
+
+		button{
+			background: none;
+			border: none;
+			padding: 0;
+			position: absolute;
+			right: 22px;
+			height: 9px;
+			img{
+				display: block;
+				filter: grayscale(1) brightness(3) invert(1);
+				flood-color: red;
+			}
+			&#plus{
+				top: 8px;
+			}
+			&#minus{
+				bottom: 8px;
+			}
+			&:hover{
+				img{
+					filter: none;
+				}
+			}
+		}
+
+		.product__submit{
+			margin-left: auto;
+			margin-right: auto;
+			width: 115px;
+			&:hover{
+				background-color: $color2;
+				color: $color4;
+			}
+			&:disabled,
+			&:disabled:hover{
+				background-color: #ccc;
+				color: $color2;
+				cursor: default;
+				filter: grayscale(.5);
+				opacity: .7;
+			}
+		}
+	}
+	.param{
+		&__title{
+			font-size: 1.7rem;
+			margin-bottom: 1.2rem;
+		}
+	}
+}
