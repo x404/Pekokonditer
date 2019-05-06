@@ -33,6 +33,25 @@
 			padding-left: 15rem;
 		}
 	}
+
+
+	.card-details{
+		.media {
+			width: 380px;
+		}
+		.mainpic{
+			width: 380px;
+			height: 380px;
+			&:before{
+				height: 384px;
+				width: 384px;
+			}
+		}
+
+		#product-carousel{
+			width: 350px;
+		}
+	}
 }
 
 
@@ -159,6 +178,30 @@
 			}
 		}
 	}
+
+
+	// card details
+	.card-details{
+		// .media {
+		// 	width: 380px;
+		// }
+		// .mainpic{
+		// 	width: 380px;
+		// 	height: 380px;
+		// 	&:before{
+		// 		height: 384px;
+		// 		width: 384px;
+		// 	}
+		// }
+
+		// #product-carousel{
+		// 	width: 350px;
+		// }
+
+		.params{
+			margin-top: 2.5rem;
+		}
+	}
 }
 
 
@@ -226,6 +269,34 @@
 			}
 		}
 	}
+
+
+	// card details
+	.card-details{
+		.media{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.description{
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 4rem;
+		}
+	}
+
+	.page-card{
+		.nav-tabs{
+			li{
+				padding-left: 0;
+			}
+			.btn{
+				height: 40px;
+				width: 140px;
+			}
+		}
+	}
 }
 
 
@@ -277,11 +348,11 @@
 			padding-top: 3rem;
 		}
 		&__text{
+			margin-top: 5rem;
 			min-height: 0;
+			padding-bottom: 1rem;
 			padding-left: 1.5rem;
 			padding-top: 1rem;
-			padding-bottom: 1rem;
-			margin-top: 5rem;
 			&:before,
 			&:after{
 				display: none;
@@ -294,7 +365,62 @@
 		width: 100%;
 		padding-right: 1.5rem;
 	}
+
+	.page-card{
+		.nav-tabs{
+			display: block !important;
+			li a{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.btn{
+				width: 200px;
+			}
+		}
+
+		.reviews__list .reviews__item{
+			padding-left: 2.5rem;
+			&:before{
+				display: none;
+			}
+		}
+
+		.review{
+			&__text{
+				margin-top: 1rem;
+			}
+		}
+	}
 }
+
+@media (max-width: 400px){
+	.card-details{
+		.media {
+			width: 100%;
+		}
+		.mainpic{
+			align-items: center;
+			display: flex;
+			height: 310px;
+			justify-content: center;
+			width: 310px;
+			text-align: center;
+			margin: 0 auto;
+			img{
+				margin: auto;
+				max-width: 85%;
+			}
+			&:before{
+				display: none !important;
+			}
+		}
+
+		#product-carousel{
+			width: 300px;
+		}
+	}
+}
+
 
 @media (max-width: 350px){
 	.goods .nav{
@@ -317,6 +443,27 @@
 	.page-brand-cat{
 		.main{
 			padding-left: 0;
+		}
+	}
+
+	.card-details{
+		.description{
+			padding-left: 0;
+		}
+		#product-carousel{
+			width: 270px;
+		}
+
+		.mainpic{
+			width: 100%;
+			height: 280px;
+		}
+	}
+
+	.similar-products{
+		.goods .product__pic{
+			max-width: 250px;
+			height: 250px;
 		}
 	}
 }

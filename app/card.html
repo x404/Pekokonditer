@@ -312,8 +312,8 @@
 
 					<div class="card-details">
 						<div class="row">
-							<div class="col-lg-9">
-								<div class="d-flex">
+							<div class="col-lg-9 col-12">
+								<div class="d-md-flex">
 									<div class="media">
 										<div class="mainpic">
 											<img src="/images/pic.jpg" alt="" />
@@ -386,9 +386,9 @@
 												<div class="field"><a href="#" title="" data-toggle="infomodal" data-target="#modal-pickup">самовывоз</a></div>
 												<div id="modal-pickup" class="infomodal">
 													<p class="title">САМОВЫВОЗ</p>
-													<p>Доставка курьером СДЭК. Сдача груза осуществляется по ПН и ПТ. Доставка товара осуществляется от 2 до 5 дней с 10:00 до 18:00 (Москва и МО) после сдачи груза по будням дням. В день доставки (утром) Вам на телефон будет отправлено СМС-уведомление с номером телефона и данными курьера, а также промежутком времени, в который он доставит Вам заказ. При желании можно изменить данные о доставке с помощью номера отправления, который будет отправлен Вам на электронную почту.</p>													
-												</div>												
-											</div>																					
+													<p>Доставка курьером СДЭК. Сдача груза осуществляется по ПН и ПТ. Доставка товара осуществляется от 2 до 5 дней с 10:00 до 18:00 (Москва и МО) после сдачи груза по будням дням. В день доставки (утром) Вам на телефон будет отправлено СМС-уведомление с номером телефона и данными курьера, а также промежутком времени, в который он доставит Вам заказ. При желании можно изменить данные о доставке с помощью номера отправления, который будет отправлен Вам на электронную почту.</p>
+												</div>								
+											</div>
 										</div>
 
 										<div class="list__prices">
@@ -402,14 +402,13 @@
 											</div>
 											<div class="prices__item item-prices">
 												<div class="item-prices__title">цена <span>(кр.опт)</span></div>
-												<div class="item-prices__value"><span class="price">68 <i class="rur">i</i></span> <span class="count">(от 1.000 шт.)</span>}</div>
+												<div class="item-prices__value"><span class="price">68 <i class="rur">i</i></span> <span class="count">(от 1.000 шт.)</span></div>
 											</div>								
 										</div>
 									</div>
-									
 								</div>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-12">
 								<div class="params text-center">
 									<form action="#" method="post" class="cardform">
 										<p class="title">параметры</p>
@@ -433,7 +432,7 @@
 						</div>
 					</div>
 
-					<ul class="nav nav-tabs d-flex flex-wrap justify-content-center topline-solid" role="tablist">
+					<ul class="nav nav-tabs d-flex flex-wrap justify-content-lg-center justify-content-between topline-solid" role="tablist">
 						<li role="presentation"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange active">описание</a></li>
 						<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange">состав</a></li>
 						<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" class="btn btn-white btn-hover-orange">отзывы</a></li>
@@ -873,9 +872,6 @@ window.onload = function(){
 			document.querySelector('.transparent-overlay').remove();
 			// hide popup
 			document.querySelector(this.name).classList.remove('show');
-
-			// remove active class
-			// document.querySelector('.cats .active').classList.remove('active')
 		}
 	}
 

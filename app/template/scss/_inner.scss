@@ -42,6 +42,7 @@
 	margin: 3.2rem 0 3rem;
 	.B_crumbBox{
 		display: flex;
+		flex-wrap: wrap;
 		img{
 			filter: grayscale(1) brightness(5) invert(1);
 		}

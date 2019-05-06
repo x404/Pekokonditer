@@ -353,11 +353,13 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 400,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					arrows: false
+					arrows: false,
+					centerMode: true,
+					centerPadding: '30px'
 				}
 			}
 		]
@@ -383,28 +385,16 @@ $(document).ready(function(){
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
-					arrows: true
+					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 767,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '80px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '100px',
-					arrows: false
+					centerPadding: '80px'					
 				}
 			},
 			{
@@ -413,8 +403,7 @@ $(document).ready(function(){
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '70px',
-					arrows: false
+					centerPadding: '70px'					
 				}
 			},
 			{
@@ -423,8 +412,7 @@ $(document).ready(function(){
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '50px',
-					arrows: false
+					centerPadding: '50px'					
 				}
 			},
 			{
@@ -433,28 +421,25 @@ $(document).ready(function(){
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '40px',
-					arrows: false
+					centerPadding: '45px'					
 				}
 			},
 			{
-				breakpoint: 385,
+				breakpoint: 400,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '25px',
-					arrows: false
+					centerPadding: '30px'					
 				}
 			},
 			{
-				breakpoint: 350,
+				breakpoint: 360,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					centerPadding: '15px',
-					arrows: false
+					centerPadding: '10px'					
 				}
 			},
 		]
@@ -516,27 +501,13 @@ $(function(){
 });
 
 
-window.onload = function(){
-	// search
 
-	[].forEach.call(document.querySelectorAll('.btn-search'),function(el,i){
-		el.addEventListener('click', function() {
-			// document.querySelector('.header__right').classList.toggle('search-show');
-			// console.log(this);
-			this.parentElement.classList.toggle('search-show');
-			this.classList.toggle('btn-search-close');
-		});		
-	});
-
-
-	// document.querySelector('.btn-search').addEventListener('click', function() {
-	// 	// document.querySelector('.header__right').classList.toggle('search-show');
-	// 	console.log(this);
-	// 	this.parent().classList.toggle('search-show');
-	// 	this.classList.toggle('btn-search-close');
-	// });
-};
-
+[].forEach.call(document.querySelectorAll('.btn-search'),function(el,i){
+	el.addEventListener('click', function() {
+		this.parentElement.classList.toggle('search-show');
+		this.classList.toggle('btn-search-close');
+	});		
+});
 
 // показываем второй  уровень меню
 $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(e){
