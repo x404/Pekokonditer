@@ -1,29 +1,150 @@
-.text-center{
-        text-align: center;
-}
-.justifyleft {text-align:left !important; }
-.justifyright {text-align:right !important; }
-.justifycenter {text-align: center !important; }
-.justifyfull {text-align:justify !important; }
+@font-face {
+  font-family: 'Avanti';
+  src: local("Avanti"), url("/template/fonts/Avanti/Avanti.woff2") format("woff2"), url("/template/fonts/Avanti/Avanti.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-img.justifyleft, table.justifyleft {float:left; margin-right:10px;margin-bottom:5px;}
-img.justifyright, table.justifyright {float:right; margin-left:10px;margin-bottom:5px;}
-img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
+@font-face {
+  font-family: 'Avanti';
+  src: local("Avanti Bold"), local("AvantiBold"), url("/template/fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("/template/fonts/AvantiBold/AvantiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
-table{
-	margin: 20px 0;
-}
-.table-bordered td, .table-bordered th{
-	border: 1px solid #dee2e6;
-	padding: 5px 10px
-}
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
-th{
-	font-size: 12px;
-	font-weight: 400;
-}
+.rur {
+  font-family: als_rublregular;
+  font-style: normal; }
 
+body {
+  font-size: 14px;
+  font-display: swap;
+  font-family: Avanti; }
 
-p{
-	margin: 0;
-}
+.before, a[href$=".pdf"]:before, a[href$=".xsl"]:before, a[href$=".xslx"]:before, a[href$=".doc"]:before, a[href$=".docx"]:before, ul li:before {
+  content: "";
+  display: block;
+  position: absolute; }
+
+h1 {
+  font-size: 18px;
+  text-transform: uppercase; }
+  h1 span {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eee; }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 14px; }
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  padding-bottom: 5ox; }
+
+p {
+  line-height: 1.8; }
+
+a {
+  color: #f05525;
+  border-bottom: 1px dashed #f05525; }
+  a:hover {
+    color: #f05525;
+    border-bottom: none;
+    text-decoration: none; }
+  a[href$=".pdf"]:before {
+    background: url(../images/ext/pdf.png); }
+  a[href$=".xsl"]:before, a[href$=".xslx"]:before {
+    background: url(../images/ext/xsl.png); }
+  a[href$=".doc"]:before, a[href$=".docx"]:before {
+    background: url(../images/ext/doc.png); }
+  a[href$=".pdf"], a[href$=".xsl"], a[href$=".xslx"], a[href$=".doc"], a[href$=".docx"] {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 7px;
+    position: relative; }
+    a[href$=".pdf"]:before, a[href$=".xsl"]:before, a[href$=".xslx"]:before, a[href$=".doc"]:before, a[href$=".docx"]:before {
+      height: 32px;
+      left: -40px;
+      top: 5px;
+      width: 30px; }
+    a[href$=".pdf"]:hover, a[href$=".xsl"]:hover, a[href$=".xslx"]:hover, a[href$=".doc"]:hover, a[href$=".docx"]:hover {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+
+strong, b {
+  font-weight: bold; }
+
+.uppercase {
+  font-size: 18px;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+table {
+  margin-top: 15px;
+  font-size: 14px; }
+  table th {
+    font-weight: bold; }
+  table th,
+  table td {
+    color: #404040;
+    border: 1px solid #ccc;
+    padding: 10px 25px; }
+  table a {
+    color: #f05525;
+    text-decoration: none; }
+    table a:hover {
+      text-decoration: underline; }
+
+.table {
+  margin-top: 15px; }
+  .table th {
+    font-weight: bold; }
+  .table th,
+  .table td {
+    border: 1px solid #b3b3b3;
+    color: #404040;
+    padding: 8px 15px; }
+  .table a {
+    color: #f05525; }
+
+ul {
+  list-style: none; }
+  ul li {
+    margin: 11px 0;
+    padding-left: 12px;
+    position: relative; }
+    ul li:before {
+      background-color: #f05525;
+      border-radius: 50%;
+      height: 5px;
+      left: 0;
+      top: 7px;
+      width: 5px; }
+
+ol {
+  counter-reset: li;
+  list-style: none; }
+  ol li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative; }
+    ol li:before {
+      color: #f05525;
+      content: counter(li, decimal) ".";
+      counter-increment: li;
+      font-size: 14px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px; }
