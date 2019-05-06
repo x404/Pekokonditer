@@ -3714,7 +3714,7 @@ p {
 .text a[href$=".xslx"]:before,
 .text a[href$=".doc"]:before,
 .text a[href$=".docx"]:before, main ul li:before,
-.text ul li:before, #gallery-carousel a:before, #gallery-carousel a:after, .aside__menu ul li a:before, .aside__visual .visual__item:before, .page-card .reviews__list .reviews__item:before, .card-details .mainpic:before, .card-details .params:before {
+.text ul li:before, #gallery-carousel a:before, #gallery-carousel a:after, .aside__menu ul li a:before, .aside__visual .visual__item:before, .page-card .reviews__list .reviews__item:before, .card-details .mainpic-link:before, .card-details .mainpic.nophoto:before, .card-details .mainpic-link:after, .card-details .params:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3823,9 +3823,12 @@ input::-webkit-inner-spin-button {
   .header-scrolled .navmenu {
     margin-top: 0; }
   .header-scrolled .logo {
+    background: url(../images/gradline.png) no-repeat right center;
     text-align: center;
-    width: 145px;
-    background: url(../images/gradline.png) no-repeat right center; }
+    transition: filter .3s;
+    width: 145px; }
+    .header-scrolled .logo:hover {
+      filter: grayscale(1); }
   .header-scrolled .folder:hover .subnav {
     display: block;
     left: -190px; }
@@ -5744,22 +5747,37 @@ div.pagination {
 
 .card-details .media {
   width: 480px; }
+  .card-details .media a {
+    border-bottom: none; }
 
 .card-details .mainpic {
-  background: #f6f5f1;
-  display: flex;
-  height: 480px;
-  width: 480px;
   position: relative; }
-  .card-details .mainpic:before {
-    border: 1px solid #f6f5f1;
-    height: 484px;
-    left: -2px;
-    top: -2px;
-    width: 484px; }
-  .card-details .mainpic img {
-    display: block;
-    margin: auto; }
+  .card-details .mainpic-link, .card-details .mainpic.nophoto {
+    background: #f6f5f1;
+    display: flex;
+    height: 480px;
+    position: relative;
+    width: 480px; }
+    .card-details .mainpic-link img, .card-details .mainpic.nophoto img {
+      display: block;
+      margin: auto; }
+    .card-details .mainpic-link:before, .card-details .mainpic.nophoto:before {
+      border: 1px solid #f6f5f1;
+      height: 484px;
+      left: -2px;
+      top: -2px;
+      width: 484px; }
+  .card-details .mainpic-link:after {
+    background-image: url(../images/sprite.png);
+    background-position: -25px -25px;
+    width: 20px;
+    height: 19px;
+    filter: grayscale(1) brightness(2) invert(1);
+    right: 8px;
+    top: 7px;
+    transition: filter .3s; }
+  .card-details .mainpic-link:hover:after {
+    filter: none; }
 
 .card-details #product-carousel {
   display: flex;
@@ -6327,10 +6345,10 @@ div.pagination {
     padding-left: 15rem; }
   .card-details .media {
     width: 380px; }
-  .card-details .mainpic {
+  .card-details .mainpic.nophoto, .card-details .mainpic-link {
     width: 380px;
     height: 380px; }
-    .card-details .mainpic:before {
+    .card-details .mainpic.nophoto:before, .card-details .mainpic-link:before {
       height: 384px;
       width: 384px; }
   .card-details #product-carousel {
@@ -6506,7 +6524,7 @@ div.pagination {
 @media (max-width: 400px) {
   .card-details .media {
     width: 100%; }
-  .card-details .mainpic {
+  .card-details .mainpic.nophoto, .card-details .mainpic-link {
     align-items: center;
     display: flex;
     height: 310px;
@@ -6514,10 +6532,10 @@ div.pagination {
     width: 310px;
     text-align: center;
     margin: 0 auto; }
-    .card-details .mainpic img {
+    .card-details .mainpic.nophoto img, .card-details .mainpic-link img {
       margin: auto;
       max-width: 85%; }
-    .card-details .mainpic:before {
+    .card-details .mainpic.nophoto:before, .card-details .mainpic-link:before {
       display: none !important; }
   .card-details #product-carousel {
     width: 300px; } }
@@ -6539,7 +6557,8 @@ div.pagination {
     padding-left: 0; }
   .card-details #product-carousel {
     width: 270px; }
-  .card-details .mainpic {
+  .card-details .mainpic-link, .card-details .mainpic.nophoto {
+    max-width: 100%;
     width: 100%;
     height: 280px; }
   .similar-products .goods .product__pic {

@@ -69,25 +69,49 @@
 .card-details{
 	.media{
 		width: 480px;
+		a{
+			border-bottom: none;
+		}
 	}
 
 	.mainpic{
-		background: $color12;
-		display: flex;
-		height: 480px;
-		width: 480px;
 		position: relative;
-		&:before{
-			@extend .before;
-			border: 1px solid $color12;
-			height: 484px;
-			left: -2px;
-			top: -2px;
-			width: 484px;
+		&-link,
+		&.nophoto{
+			background: $color12;
+			display: flex;
+			height: 480px;
+			position: relative;
+			width: 480px;
+			img{
+				display: block;
+				margin: auto;
+			}
+			&:before{
+				@extend .before;
+				border: 1px solid $color12;
+				height: 484px;
+				left: -2px;
+				top: -2px;
+				width: 484px;
+			}
 		}
-		img{
-			display: block;
-			margin: auto;			
+
+		&-link{
+			&:after{
+				@extend .before;
+				@include sprite($icon-search);
+				filter: grayscale(1) brightness(2) invert(1);
+				right: 8px;
+				top: 7px;
+				transition: filter .3s;
+			}
+			&:hover{
+				&:after{
+					filter: none;
+				}
+			}
+
 		}
 	}
 

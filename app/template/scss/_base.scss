@@ -348,9 +348,13 @@ input::-webkit-inner-spin-button {
 	}
 
 	.logo{
-		text-align: center;
-		width: 145px;
 		background: url(../images/gradline.png) no-repeat right center;
+		text-align: center;
+		transition: filter .3s;
+		width: 145px;
+		&:hover{
+			filter: grayscale(1)
+		}
 	}
 
 	.folder{

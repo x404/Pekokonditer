@@ -16,6 +16,8 @@ $(document).ready(function(){
 		asNavFor: '#groups-carousel2',
 		focusOnSelect: true,
 		infinite: false,
+		autoplay: true,
+		autoplaySpeed: 60000,
 		responsive: [
 			{
 				breakpoint: 1400,
@@ -266,6 +268,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		arrows: true,
 		slidesToScroll: 1,
+		autoplay: true,
 		prevArrow:`
 			<button class="slick-arrow slick-prev" aria-label="Назад" type="button">
 				<svg width="26" height="31">
