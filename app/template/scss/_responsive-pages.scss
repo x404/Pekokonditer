@@ -63,6 +63,11 @@
 
 
 @media (max-width: 991px){
+	#blog-carousel{
+		.item-news{
+			width: 340px;
+		}
+	}
 	.review{
 		&__text{
 			height: auto;
@@ -208,8 +213,14 @@
 			.product__item{
 				margin-left: 0;
 				margin-right: 0;
-				width: 225px;
+				width: 45%;
 			}
+		}
+	}
+
+	.panel{
+		.sort{
+			margin-bottom: 1rem;
 		}
 	}
 }
@@ -326,10 +337,41 @@
 
 
 
+@media (max-width: 480px){
+	.page-brand,
+	.page-cat{
+		.main{
+			padding-left: 0;
+		}
+		.goods .product__item{
+			margin-left: auto;
+			margin-right: auto;
+			width: 250px;
+			img{
+				width: auto;
+				max-width: 250px
+			}
+
+			.label{
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+
 @media (max-width: 450px){
 	.homeslider{
 		font-size: 2.5rem;
 	}
+
+	#blog-carousel{
+		.item-news{
+			width: 250px;
+		}
+	}
+
+
 	.review{
 		&__meta{
 			padding-top: 3rem;
@@ -378,6 +420,8 @@
 			}
 		}
 	}
+
+
 }
 
 @media (max-width: 400px){

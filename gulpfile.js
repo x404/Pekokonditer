@@ -226,6 +226,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/jquery.fancybox.min.css',
+		config.templateDir + '/css/selectize.css',
 		config.templateDir + '/css/tiny.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));
@@ -234,6 +235,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildJs = gulp.src([ // move js to production
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/selectize.min.js',
 		config.templateDir + '/js/engine.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));

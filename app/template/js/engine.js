@@ -53,7 +53,82 @@ $(document).ready(function(){
 	});
 
 
-
+	$('#blog-carousel').slick({
+		slidesToShow: 3,
+		arrows: true,
+		slidesToScroll: 1,
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
+		dots: false,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '100px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '60px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '100px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '70px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '20px',
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 470,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '10px',
+					arrows: false
+				}
+			},
+		]
+	});
 	$('#aboutus-carousel').slick({
 		slidesToShow: 2,
 		arrows: false,
@@ -73,93 +148,6 @@ $(document).ready(function(){
 					slidesToShow: 1
 				}
 			}
-		]
-	});
-
-
-	$('#blog-carousel').slick({
-		slidesToShow: 3,
-		arrows: true,
-		slidesToScroll: 1,
-		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
-		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.png" alt="" /></button>',
-		dots: false,
-		infinite: false,
-		responsive: [
-			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 1250,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '150px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '150px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '100px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '70px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '20px',
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 460,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '10px',
-					arrows: false
-				}
-			},
 		]
 	});
 

@@ -76,6 +76,11 @@
 
 	.mainpic{
 		position: relative;
+		&.nophoto{
+			img{
+				align-self: center;
+			}
+		}
 		&-link,
 		&.nophoto{
 			background: $color12;

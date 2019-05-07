@@ -11,8 +11,19 @@ _::-webkit-:host:not(:root:root), .header{
 // edge
 // @supports (-ms-ime-align:auto) {
 // }
-_::-webkit-full-page-media, _:future, :root .selector {
+_::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
+	top: 5px;
 }
+
+
+ @supports (-ms-ime-align:auto) {
+	.btn-wauto{
+		display: block;
+		width: 18rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+ }
 
 
 //ie11

@@ -115,6 +115,12 @@
 		}
 	}
 
+	.header{
+		.logo{
+			position: relative;
+			left: -45px;
+		}
+	}
 
 
 	.navmenu .subnav{
@@ -186,12 +192,38 @@
 	.main-grid{
 		display: block !important;
 	}
+
+	.pagination{
+		justify-content: center !important
+	}
+
+	.footer{
+		.column-social{
+			margin-top: 2rem;
+			.title{
+				text-align: center;
+			}
+			.wrapper{
+				border-left: none;
+			}
+		}
+		.social{
+			justify-content: center
+		}
+
+		&__contacts{
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width: 767px){
 	.header{
 		.sisea-search-form{
 			display: block;
+			position: static;
+		}
+		.logo{
 			position: static;
 		}
 	}

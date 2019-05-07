@@ -3722,10 +3722,6 @@ p {
 input[type="number"] {
   -moz-appearance: textfield; }
 
-input[type="number"]:hover,
-input[type="number"]:focus {
-  -moz-appearance: number-input; }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4157,15 +4153,16 @@ input::-webkit-inner-spin-button {
 /* Сдвигаем переключатель чекбокса, когда он включен. */
 .user-access:checked + label:after {
   content: '*';
+  border-radius: 3px;
   color: #fff;
-  position: absolute;
-  font-style: normal;
-  top: -8px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
   font-size: 3.6rem;
-  border-radius: 3px; }
+  font-style: normal;
+  height: 22px;
+  left: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 1px;
+  width: 22px; }
 
 @font-face {
   font-family: 'Avanti';
@@ -4352,9 +4349,11 @@ input::-webkit-inner-spin-button {
   padding: 5rem 0;
   position: relative; }
 
+#blog-carousel,
 #groups-carousel,
 #producers-carousel {
   display: flex; }
+  #blog-carousel.slick-initialized,
   #groups-carousel.slick-initialized,
   #producers-carousel.slick-initialized {
     display: block; }
@@ -5332,13 +5331,14 @@ label.error {
     margin-top: 2rem;
     justify-content: center;
     width: 10rem; }
-  @media (max-width: 991px) {
-    .item-news {
-      width: 100%; } }
   @media (max-width: 450px) {
     .item-news {
       min-height: 0;
       padding-bottom: 2.5rem; } }
+
+@media (max-width: 991px) {
+  .content .item-news {
+    width: 100%; } }
 
 @media (max-width: 767px) {
   .item-action,
@@ -5752,6 +5752,8 @@ div.pagination {
 
 .card-details .mainpic {
   position: relative; }
+  .card-details .mainpic.nophoto img {
+    align-self: center; }
   .card-details .mainpic-link, .card-details .mainpic.nophoto {
     background: #f6f5f1;
     display: flex;
@@ -6188,6 +6190,16 @@ div.pagination {
 ::-ms-clear {
   display: none; }
 
+_::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
+  top: 5px; }
+
+@supports (-ms-ime-align: auto) {
+  .btn-wauto {
+    display: block;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto; } }
+
 @media (max-width: 1700px) {
   .footer .shadow-right:before {
     right: 0;
@@ -6241,6 +6253,9 @@ div.pagination {
     max-width: 98%; }
   .header-scrolled .folder:hover .subnav {
     margin-left: -490px; }
+  .header .logo {
+    position: relative;
+    left: -45px; }
   .navmenu .subnav ul li {
     width: 25%; }
   .footer__contacts {
@@ -6277,11 +6292,25 @@ div.pagination {
 
 @media (max-width: 768px) {
   .main-grid {
-    display: block !important; } }
+    display: block !important; }
+  .pagination {
+    justify-content: center !important; }
+  .footer .column-social {
+    margin-top: 2rem; }
+    .footer .column-social .title {
+      text-align: center; }
+    .footer .column-social .wrapper {
+      border-left: none; }
+  .footer .social {
+    justify-content: center; }
+  .footer__contacts {
+    text-align: center; } }
 
 @media (max-width: 767px) {
   .header .sisea-search-form {
     display: block;
+    position: static; }
+  .header .logo {
     position: static; }
   .btn-search {
     display: none; }
@@ -6355,6 +6384,8 @@ div.pagination {
     width: 350px; } }
 
 @media (max-width: 991px) {
+  #blog-carousel .item-news {
+    width: 340px; }
   .review__text {
     height: auto;
     min-height: 15rem; }
@@ -6431,7 +6462,9 @@ div.pagination {
   .page-brand .goods .product__item {
     margin-left: 0;
     margin-right: 0;
-    width: 225px; } }
+    width: 45%; }
+  .panel .sort {
+    margin-bottom: 1rem; } }
 
 @media (max-width: 767px) {
   .homepage .blog .container {
@@ -6490,9 +6523,28 @@ div.pagination {
   .panel .right .sort {
     margin-bottom: .5rem; } }
 
+@media (max-width: 480px) {
+  .page-brand .main,
+  .page-cat .main {
+    padding-left: 0; }
+  .page-brand .goods .product__item,
+  .page-cat .goods .product__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px; }
+    .page-brand .goods .product__item img,
+    .page-cat .goods .product__item img {
+      width: auto;
+      max-width: 250px; }
+    .page-brand .goods .product__item .label,
+    .page-cat .goods .product__item .label {
+      font-size: 1.5rem; } }
+
 @media (max-width: 450px) {
   .homeslider {
     font-size: 2.5rem; }
+  #blog-carousel .item-news {
+    width: 250px; }
   .review__meta {
     padding-top: 3rem; }
   .review__text {
