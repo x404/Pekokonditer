@@ -35,7 +35,8 @@ $color_2: #f05525;
 		margin-left: 0;
 		margin-right: 0;
 		max-width: 100%;
-		min-height: 656px;
+		// min-height: 656px;
+		margin-top: 0;
 		overflow: hidden;
 		padding-left: 0;
 		padding-right: 0;
@@ -45,6 +46,10 @@ $color_2: #f05525;
 		transition: .3s;
 		width: 300px;
 		z-index: -1;
+
+		.subnav{
+			transition: none;
+		}
 
 		&__inner{
 			position: fixed;

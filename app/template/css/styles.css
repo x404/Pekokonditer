@@ -4556,7 +4556,7 @@ input::-webkit-inner-spin-button {
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
-    min-height: 656px;
+    margin-top: 0;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -4566,6 +4566,8 @@ input::-webkit-inner-spin-button {
     transition: .3s;
     width: 300px;
     z-index: -1; }
+    .navmenu .subnav {
+      transition: none; }
     .navmenu__inner {
       position: fixed;
       top: 0;
@@ -6005,7 +6007,7 @@ div.pagination {
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
-    min-height: 656px;
+    margin-top: 0;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -6015,6 +6017,8 @@ div.pagination {
     transition: .3s;
     width: 300px;
     z-index: -1; }
+    .navmenu .subnav {
+      transition: none; }
     .navmenu__inner {
       position: fixed;
       top: 0;
@@ -6533,7 +6537,9 @@ _::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
     padding-left: 0; }
   .page-card .nav-tabs .btn {
     height: 40px;
-    width: 140px; } }
+    width: 140px; }
+  .page-brand-cat .main {
+    padding-left: 0; } }
 
 @media (max-width: 550px) {
   .panel {
@@ -6577,8 +6583,11 @@ _::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
 @media (max-width: 450px) {
   .homeslider {
     font-size: 2.5rem; }
-  #blog-carousel .item-news {
-    width: 250px; }
+  #blog-carousel {
+    margin-left: -15px;
+    margin-right: -15px; }
+    #blog-carousel .item-news {
+      width: 270px; }
   .review__meta {
     padding-top: 3rem; }
   .review__text {
@@ -6605,7 +6614,10 @@ _::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
     .page-card .reviews__list .reviews__item:before {
       display: none; }
   .page-card .review__text {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .similar-products {
+    margin-left: -15px;
+    margin-right: -15px; } }
 
 @media (max-width: 400px) {
   .card-details .media {

@@ -123,7 +123,7 @@ $(document).ready(function(){
 				settings: {
 					slidesToShow: 1,
 					centerMode: true,
-					centerPadding: '10px',
+					centerPadding: '40px',
 					arrows: false
 				}
 			},
