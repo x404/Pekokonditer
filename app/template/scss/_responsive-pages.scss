@@ -194,6 +194,36 @@
 			margin-top: 2.5rem;
 		}
 	}
+
+
+	.comment-form .btn{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+	.card-details .params .product__submit{
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media (max-width: 800px){
+	.item-news{
+		.more{
+			.btn{
+				margin-top: 1.5rem;
+				margin-bottom: .5rem;
+			}
+		}
+	}
 }
 
 
@@ -221,6 +251,16 @@
 	.panel{
 		.sort{
 			margin-bottom: 1rem;
+		}
+	}
+
+	.item-news{
+		min-height: 200px;
+		.more{
+			.btn{
+				margin-top: 2.5rem;
+				margin-bottom: 1rem;
+			}
 		}
 	}
 }

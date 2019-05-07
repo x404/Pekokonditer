@@ -298,6 +298,16 @@ main,
 		display: flex;
 		justify-content: center;
 		padding-bottom: 3rem;
+		@media (max-width: 480px){
+			flex-wrap: wrap;
+			margin-top: 2.5rem;
+			li{
+				width: 75%;
+				.btn{
+					margin-top: 1rem;
+				}
+			}
+		}
 		li{
 			margin: 0 1rem;
 			&.active{

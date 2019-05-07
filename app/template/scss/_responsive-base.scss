@@ -188,15 +188,7 @@
 	}
 }
 
-@media (max-width: 768px){
-	.main-grid{
-		display: block !important;
-	}
-
-	.pagination{
-		justify-content: center !important
-	}
-
+@media (max-width: 790px){
 	.footer{
 		.column-social{
 			margin-top: 2rem;
@@ -214,6 +206,17 @@
 		&__contacts{
 			text-align: center;
 		}
+	}
+}
+
+
+@media (max-width: 768px){
+	.main-grid{
+		display: block !important;
+	}
+
+	.pagination{
+		justify-content: center !important
 	}
 }
 
