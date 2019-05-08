@@ -75,6 +75,10 @@
     height: 33rem;
 }
 
+.hide{
+	display: none;
+}
+
 .main.contacts{
 	.nav{
 		li{
@@ -88,6 +92,72 @@
 			&.active,
 			&:hover{
 				border-bottom-color: $color4;
+			}
+		}
+	}
+
+	.wayinfo{
+		min-height: 5rem;
+		.column{
+			position: relative;
+		}
+		.separator{
+			margin: 0 1rem;
+		}
+		button.active{
+			border-bottom: 1px dashed rgba(0,0,0,0);
+			&.active,
+			&:hover{
+				border-bottom-color: $color4;
+			}
+		}
+
+		.infomodal{
+			width: 580px;
+			left: 0;
+			top: 120px;
+			font-size: 1.4rem;
+			.infomodal-title{
+				font-size: 1.4rem;
+			}
+			.close{
+				background: none;
+				border: none;
+				cursor: pointer;
+				padding: 0;
+				position: absolute;
+				right: 8px;
+				top: 8px;
+			}
+
+			.placemore{
+				margin-top: 1rem;
+			}
+		}
+		.shedule{
+			&-wrapper{
+				position: absolute;
+				left: 0;
+				top: 2.8rem;
+			}
+			&-link{
+				display: none;
+				&-active{
+					display: block;
+				}
+			}
+			&-table{
+				border: none;
+				color: $color2;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 1.6rem;
+				width: 250px;
+				td{
+					border: none !important;
+					color: $color2;
+					padding: .4rem 1.5rem;
+				}
 			}
 		}
 	}

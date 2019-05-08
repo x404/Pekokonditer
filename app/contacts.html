@@ -262,7 +262,7 @@
 							<div class="d-flex align-items-center">
 								<label>
 									<span class="visually-hidden">поиск по сайту</span>
-									<input class="form-control" type="text" name="search" id="search" value="" placeholder="поиск по сайту">
+									<input class="form-control" type="text" name="search" id="search2" value="" placeholder="поиск по сайту">
 								</label>
 								<input type="hidden" name="id" value="35">
 								<button type="submit" class="submit" aria-label="найти"></button>			
@@ -293,7 +293,8 @@
 					<div class="row">
 						<div class="column col-lg-3 col-md-6 order-1 order-md-1">
 							<p class="title"><strong>Наш адрес</strong></p>
-							<p>ФУД СИТИ, Калужское шоссе 22 км, 10</p>
+							<p><button type="button" class="btn-inline" data-coords="55.601010, 37.471102">ФУД СИТИ</button></p>
+							<p>Калужское шоссе 22 км, 10</p>
 							<p>6-7 линия; 063-066 павильон; 1 этаж</p>
 						</div>
 						<div class="column col-lg-3 col-md-6 order-2 order-md-2">
@@ -309,18 +310,456 @@
 								<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="btn-inline btn-general" >м.Тропарево</a></li>
 							</ul>
 
-							<div class="tab-content">
+							<div class="tab-content wayinfo ">
 								<div role="tabpanel" class="tab-pane fade show" id="tab1">
-									<button type="button" class="btn-inline" data-coords="55.617202, 37.509661">в ФудСити</button>  |  <button type="button" class="btn-inline" data-coords="55.601199, 37.467019">из ФудСити</button>
+									<div class="d-flex">
+										<div class="column">
+											<button type="button" class="btn-inline" data-coords="55.617202, 37.509661" data-showlink=".link-1">в ФудСити</button>
+											<div class="shedule-wrapper">
+												<button type="button" class="btn-inline shedule-link link-1" data-toggle="infomodal" data-target="#modal-in_Shedule1">расписание</button>
+											</div>
+										</div>
+										<div class="separator">|</div>
+										<div class="column">
+											<button type="button" class="btn-inline" data-coords="55.601199, 37.467019" data-showlink=".link-2">из ФудСити</button>
+											<div class="shedule-wrapper">
+												<button type="button" class="btn-inline shedule-link link-2" data-toggle="infomodal" data-target="#modal-from_Shedule2">расписание</button>
+											</div>
+										</div>
+									</div>
+
+									<div id="modal-in_Shedule1" class="infomodal">
+										<div class="text-center">
+											<p class="infomodal-title">РАСПИСАНИЕ</p>
+											<p>от Фуд Сити до м.Теплый Стан</p>
+											<p class="placemore">Остановка находится на улице между 15 и 16 входом торгового центра.</p>
+											<table border="none" class="shedule-table">
+												<tr>
+													<td> 6:00</td>
+													<td>6:15</td>
+													<td>6:30</td>
+													<td>6:45</td>
+												</tr>
+												<tr>
+													<td>7:00</td>
+													<td>7:15</td>
+													<td>7:30</td>
+													<td>7:45</td>
+												</tr>
+												<tr>
+													<td>8:00</td>
+													<td>8:15</td>
+													<td>8:30</td>
+													<td>8:45</td>
+												</tr>
+												<tr>
+													<td>9:00</td>
+													<td>9:15</td>
+													<td>9:30</td>
+													<td>9:45</td>
+												</tr>
+												<tr>
+													<td>10:00</td>
+													<td>10:15</td>
+													<td>10:30</td>
+													<td>10:45</td>
+												</tr>
+												<tr>
+													<td>11:00</td>
+													<td>11:20</td>
+													<td>11:40</td>
+													<td>12:00</td>
+												</tr>
+												<tr>
+													<td>12:20</td>
+													<td>12:40</td>
+													<td>13:00</td>
+													<td>13:20</td>
+												</tr>
+												<tr>
+													<td>13:40</td>
+													<td>14:00</td>
+													<td>14:20</td>
+													<td>14:40</td>
+												</tr>
+												<tr>
+													<td>15:00</td>
+													<td>15:20</td>
+													<td>15:40</td>
+													<td>16:00</td>
+												</tr>
+												<tr>
+													<td>16:15</td>
+													<td>16:30</td>
+													<td>16:45</td>
+													<td>17:00</td>
+												</tr>
+												<tr>
+													<td>17:15</td>
+													<td>17:30</td>
+													<td>17:45</td>
+													<td>18:00</td>
+												</tr>
+												<tr>
+													<td>18:15</td>
+													<td>18:30</td>
+													<td>18:45</td>
+													<td>19:00</td>
+												</tr>
+												<tr>
+													<td>19:20</td>
+													<td>19:40</td>
+													<td>20:00</td>
+													<td>20:20</td>
+												</tr>
+												<tr>
+													<td>20:40</td>
+													<td>21:00</td>
+													<td>21:20</td>
+													<td>21:40</td>
+												</tr>
+												<tr>
+													<td>22:00</td>
+													<td>22:30</td>
+													<td></td>
+													<td></td>
+												</tr>
+											</table>
+											<p>СТОИМОСТЬ ПРОЕЗДА 50 ₽</p>
+										</div>
+										<button class="close" aria-label="Закрыть"><img src="/template/images/close-2.png" alt="" /></button>
+									</div>
+
+									<div id="modal-from_Shedule2" class="infomodal">
+										<div class="text-center">
+											<p class="infomodal-title">РАСПИСАНИЕ</p>
+											<p>м.Теплый Стан до Фуд Сити</p>
+											<p class="placemore">Остановка находится на улице между 16 и 17 входом торгового центра.</p>
+											<table border="none" class="shedule-table">
+												<tr>
+													<td> 6:00</td>
+													<td>6:15</td>
+													<td>6:30</td>
+													<td>6:45</td>
+												</tr>
+												<tr>
+													<td>7:00</td>
+													<td>7:15</td>
+													<td>7:30</td>
+													<td>7:45</td>
+												</tr>
+												<tr>
+													<td>8:00</td>
+													<td>8:15</td>
+													<td>8:30</td>
+													<td>8:45</td>
+												</tr>
+												<tr>
+													<td>9:00</td>
+													<td>9:15</td>
+													<td>9:30</td>
+													<td>9:45</td>
+												</tr>
+												<tr>
+													<td>10:00</td>
+													<td>10:15</td>
+													<td>10:30</td>
+													<td>10:45</td>
+												</tr>
+												<tr>
+													<td>11:00</td>
+													<td>11:20</td>
+													<td>11:40</td>
+													<td>12:00</td>
+												</tr>
+												<tr>
+													<td>12:20</td>
+													<td>12:40</td>
+													<td>13:00</td>
+													<td>13:20</td>
+												</tr>
+												<tr>
+													<td>13:40</td>
+													<td>14:00</td>
+													<td>14:20</td>
+													<td>14:40</td>
+												</tr>
+												<tr>
+													<td>15:00</td>
+													<td>15:20</td>
+													<td>15:40</td>
+													<td>16:00</td>
+												</tr>
+												<tr>
+													<td>16:15</td>
+													<td>16:30</td>
+													<td>16:45</td>
+													<td>17:00</td>
+												</tr>
+												<tr>
+													<td>17:15</td>
+													<td>17:30</td>
+													<td>17:45</td>
+													<td>18:00</td>
+												</tr>
+												<tr>
+													<td>18:15</td>
+													<td>18:30</td>
+													<td>18:45</td>
+													<td>19:00</td>
+												</tr>
+												<tr>
+													<td>19:20</td>
+													<td>19:40</td>
+													<td>20:00</td>
+													<td>20:20</td>
+												</tr>
+												<tr>
+													<td>20:40</td>
+													<td>21:00</td>
+													<td>21:20</td>
+													<td>21:40</td>
+												</tr>
+												<tr>
+													<td>22:00</td>
+													<td>22:30</td>
+													<td></td>
+													<td></td>
+												</tr>
+											</table>
+											<p>СТОИМОСТЬ ПРОЕЗДА 150 ₽</p>
+										</div>
+										<button class="close" aria-label="Закрыть"><img src="/template/images/close-2.png" alt="" /></button>
+									</div>
+
 								</div>
 								<div role="tabpanel" class="tab-pane fade" id="tab2">
-									<button type="button" class="btn-inline" data-coords="55.646118, 37.473571">в ФудСити2</button>  |  <button type="button" class="btn-inline" data-coords="55.601199, 37.467019">из ФудСити2</button>
+									<div class="d-flex">
+										<div class="column">
+											<button type="button" class="btn-inline" data-coords="55.646118, 37.473571" data-showlink=".link-3">в ФудСити2</button>
+											<div class="shedule-wrapper">
+												<button type="button" class="btn-inline shedule-link link-3" data-toggle="infomodal" data-target="#modal-in_Shedule3">расписание</button>
+											</div>
+										</div>
+										<div class="separator">|</div>
+										<div class="column">
+											<button type="button" class="btn-inline" data-coords="55.601199, 37.467019" data-showlink=".link-4">из ФудСити2</button>
+											<div class="shedule-wrapper">
+												<button type="button" class="btn-inline shedule-link link-4" data-toggle="infomodal" data-target="#modal-from_Shedule4">расписание</button>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="modal-in_Shedule3" class="infomodal">
+										<div class="text-center">
+											<p class="infomodal-title">РАСПИСАНИЕ</p>
+											<p>от Фуд Сити до м.Теплый Стан</p>
+											<p class="placemore">Остановка находится на улице между 15 и 16 входом торгового центра.</p>
+											<table border="none" class="shedule-table">
+												<tr>
+													<td> 6:00</td>
+													<td>6:15</td>
+													<td>6:30</td>
+													<td>6:45</td>
+												</tr>
+												<tr>
+													<td>7:00</td>
+													<td>7:15</td>
+													<td>7:30</td>
+													<td>7:45</td>
+												</tr>
+												<tr>
+													<td>8:00</td>
+													<td>8:15</td>
+													<td>8:30</td>
+													<td>8:45</td>
+												</tr>
+												<tr>
+													<td>9:00</td>
+													<td>9:15</td>
+													<td>9:30</td>
+													<td>9:45</td>
+												</tr>
+												<tr>
+													<td>10:00</td>
+													<td>10:15</td>
+													<td>10:30</td>
+													<td>10:45</td>
+												</tr>
+												<tr>
+													<td>11:00</td>
+													<td>11:20</td>
+													<td>11:40</td>
+													<td>12:00</td>
+												</tr>
+												<tr>
+													<td>12:20</td>
+													<td>12:40</td>
+													<td>13:00</td>
+													<td>13:20</td>
+												</tr>
+												<tr>
+													<td>13:40</td>
+													<td>14:00</td>
+													<td>14:20</td>
+													<td>14:40</td>
+												</tr>
+												<tr>
+													<td>15:00</td>
+													<td>15:20</td>
+													<td>15:40</td>
+													<td>16:00</td>
+												</tr>
+												<tr>
+													<td>16:15</td>
+													<td>16:30</td>
+													<td>16:45</td>
+													<td>17:00</td>
+												</tr>
+												<tr>
+													<td>17:15</td>
+													<td>17:30</td>
+													<td>17:45</td>
+													<td>18:00</td>
+												</tr>
+												<tr>
+													<td>18:15</td>
+													<td>18:30</td>
+													<td>18:45</td>
+													<td>19:00</td>
+												</tr>
+												<tr>
+													<td>19:20</td>
+													<td>19:40</td>
+													<td>20:00</td>
+													<td>20:20</td>
+												</tr>
+												<tr>
+													<td>20:40</td>
+													<td>21:00</td>
+													<td>21:20</td>
+													<td>21:40</td>
+												</tr>
+												<tr>
+													<td>22:00</td>
+													<td>22:30</td>
+													<td></td>
+													<td></td>
+												</tr>
+											</table>
+											<p>СТОИМОСТЬ ПРОЕЗДА 550 ₽</p>
+										</div>
+										<button class="close" aria-label="Закрыть"><img src="/template/images/close-2.png" alt="" /></button>
+									</div>
+
+									<div id="modal-from_Shedule4" class="infomodal">
+										<div class="text-center">
+											<p class="infomodal-title">РАСПИСАНИЕ</p>
+											<p>м.Теплый Стан до Фуд Сити</p>
+											<p class="placemore">Остановка находится на улице между 16 и 17 входом торгового центра.</p>
+											<table border="none" class="shedule-table">
+												<tr>
+													<td> 6:00</td>
+													<td>6:15</td>
+													<td>6:30</td>
+													<td>6:45</td>
+												</tr>
+												<tr>
+													<td>7:00</td>
+													<td>7:15</td>
+													<td>7:30</td>
+													<td>7:45</td>
+												</tr>
+												<tr>
+													<td>8:00</td>
+													<td>8:15</td>
+													<td>8:30</td>
+													<td>8:45</td>
+												</tr>
+												<tr>
+													<td>9:00</td>
+													<td>9:15</td>
+													<td>9:30</td>
+													<td>9:45</td>
+												</tr>
+												<tr>
+													<td>10:00</td>
+													<td>10:15</td>
+													<td>10:30</td>
+													<td>10:45</td>
+												</tr>
+												<tr>
+													<td>11:00</td>
+													<td>11:20</td>
+													<td>11:40</td>
+													<td>12:00</td>
+												</tr>
+												<tr>
+													<td>12:20</td>
+													<td>12:40</td>
+													<td>13:00</td>
+													<td>13:20</td>
+												</tr>
+												<tr>
+													<td>13:40</td>
+													<td>14:00</td>
+													<td>14:20</td>
+													<td>14:40</td>
+												</tr>
+												<tr>
+													<td>15:00</td>
+													<td>15:20</td>
+													<td>15:40</td>
+													<td>16:00</td>
+												</tr>
+												<tr>
+													<td>16:15</td>
+													<td>16:30</td>
+													<td>16:45</td>
+													<td>17:00</td>
+												</tr>
+												<tr>
+													<td>17:15</td>
+													<td>17:30</td>
+													<td>17:45</td>
+													<td>18:00</td>
+												</tr>
+												<tr>
+													<td>18:15</td>
+													<td>18:30</td>
+													<td>18:45</td>
+													<td>19:00</td>
+												</tr>
+												<tr>
+													<td>19:20</td>
+													<td>19:40</td>
+													<td>20:00</td>
+													<td>20:20</td>
+												</tr>
+												<tr>
+													<td>20:40</td>
+													<td>21:00</td>
+													<td>21:20</td>
+													<td>21:40</td>
+												</tr>
+												<tr>
+													<td>22:00</td>
+													<td>22:30</td>
+													<td></td>
+													<td></td>
+												</tr>
+											</table>
+											<p>СТОИМОСТЬ ПРОЕЗДА 250 ₽</p>
+										</div>
+										<button class="close" aria-label="Закрыть"><img src="/template/images/close-2.png" alt="" /></button>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="column col-lg-3 col-md-6 order-3 order-md-4">
 							<p class="title"><strong>Наши реквизиты</strong></p>
-							<p><a href="#"><a href="#" title="" data-toggle="modal" data-target="#requisite">посмотреть</a></a></p>
+							<p><a href="#" title="" data-toggle="modal" data-target="#requisite">посмотреть</a></p>
 						</div>
 					</div>					
 				</main>
@@ -530,11 +969,13 @@
 <script src="https://api-maps.yandex.ru/2.1.26/?lang=ru_RU"></script>
 <script>
 var map;
-var myCollection;	
+var myCollection,
+	$zoom = 16;
+
 ymaps.ready(function () {
 	map = new ymaps.Map('ymap', {
 		center: [ 55.601010, 37.471102 ],
-		zoom: 16
+		zoom: $zoom
 	});
  //    myPlacemark = new ymaps.Placemark(map.getCenter(), {
  //            balloonContent: ' ФУД СИТИ, Калужское шоссе 22 км, 10 6-7 линия; 063-066 павильон; 1 этаж',
@@ -609,17 +1050,84 @@ ymaps.ready(function () {
 
 
 function go_to(coords, address){
-	map.setCenter(coords.split(","), 18);
+	map.setCenter(coords.split(","), $zoom);
 }
 
 window.onload = function(){
 	[].forEach.call(document.querySelectorAll('[data-coords]'),function(el,i){
 		el.addEventListener('click', function(e){
-			console.log(this.dataset.coords);
-			go_to(this.dataset.coords)
+			go_to(this.dataset.coords);
+
+			let target = this.dataset.showlink;
+
+			// doing active btn
+			(document.querySelectorAll('.wayinfo button.active').length > 0) ? document.querySelector('.wayinfo button.active').classList.remove('active') : '';
+			this.classList.add('active');
+
+			//show link to shedule
+			(document.querySelectorAll('.shedule-link-active').length > 0) ? document.querySelector('.shedule-link-active').classList.remove('shedule-link-active') : '';
+			document.querySelector(target).classList.add('shedule-link-active');
 		})
 	});
+
+
+	[].forEach.call(document.querySelectorAll('[data-toggle="infomodal"]'),function(el,i){
+		el.addEventListener('click', function(e){
+		e.preventDefault();
+		let target = el.dataset.target;
+			modal = new Popup(target);
+			modal.open();
+		})
+	});
+
 }
+
+
+// popup on homepage
+class Popup{
+	constructor(name){
+		this.name = name;
+	}
+	open(){
+		// create overlay
+		const newOverlay = document.createElement('div');
+		newOverlay.className ='transparent-overlay';
+		document.querySelector('body').appendChild(newOverlay);
+		// show overlay
+
+		document.querySelector('.transparent-overlay').addEventListener('click', function(){
+			modal.close();
+		});
+
+		// button 'close'
+		document.querySelector(this.name + ' .close').addEventListener('click', function(){
+			modal.close();
+		});
+
+
+		// GENERAL EVENT - ONKEYDOWN
+		document.onkeydown = function(evt) {
+		    evt = evt || window.event;
+		    let isEscape = false;
+		    if ("key" in evt) {
+		        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+		    } else {
+		        isEscape = (evt.keyCode == 27);
+		    }
+		    if (isEscape) {
+		    	modal.close();
+		    }
+		};
+		// show popup
+		document.querySelector(this.name).classList.add('show');
+	}
+	close(){
+		document.querySelector('.transparent-overlay').remove();
+		// hide popup
+		document.querySelector(this.name).classList.remove('show');
+	}
+}
+
 
 </script>
 </body>

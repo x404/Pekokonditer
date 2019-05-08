@@ -5598,6 +5598,9 @@ div.pagination {
   margin-top: 3rem;
   height: 33rem; }
 
+.hide {
+  display: none; }
+
 .main.contacts .nav li {
   padding-left: 0; }
   .main.contacts .nav li:before {
@@ -5607,6 +5610,53 @@ div.pagination {
   border-bottom: 1px dashed rgba(0, 0, 0, 0); }
   .main.contacts .nav a.active, .main.contacts .nav a:hover {
     border-bottom-color: #f05525; }
+
+.main.contacts .wayinfo {
+  min-height: 5rem; }
+  .main.contacts .wayinfo .column {
+    position: relative; }
+  .main.contacts .wayinfo .separator {
+    margin: 0 1rem; }
+  .main.contacts .wayinfo button.active {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+    .main.contacts .wayinfo button.active.active, .main.contacts .wayinfo button.active:hover {
+      border-bottom-color: #f05525; }
+  .main.contacts .wayinfo .infomodal {
+    width: 580px;
+    left: 0;
+    top: 120px;
+    font-size: 1.4rem; }
+    .main.contacts .wayinfo .infomodal .infomodal-title {
+      font-size: 1.4rem; }
+    .main.contacts .wayinfo .infomodal .close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      position: absolute;
+      right: 8px;
+      top: 8px; }
+    .main.contacts .wayinfo .infomodal .placemore {
+      margin-top: 1rem; }
+  .main.contacts .wayinfo .shedule-wrapper {
+    position: absolute;
+    left: 0;
+    top: 2.8rem; }
+  .main.contacts .wayinfo .shedule-link {
+    display: none; }
+    .main.contacts .wayinfo .shedule-link-active {
+      display: block; }
+  .main.contacts .wayinfo .shedule-table {
+    border: none;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.6rem;
+    width: 250px; }
+    .main.contacts .wayinfo .shedule-table td {
+      border: none !important;
+      color: #fff;
+      padding: .4rem 1.5rem; }
 
 @media (max-width: 991px) {
   .main.contacts .column {
