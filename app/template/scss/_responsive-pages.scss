@@ -344,6 +344,14 @@
 }
 
 
+@media (max-width: 650px){
+	.main.contacts .wayinfo .infomodal{
+		width: 450px;
+	}
+}
+
+
+
 @media (max-width: 550px){
 	.panel{
 		display: block !important;
@@ -394,14 +402,19 @@
 			margin-right: auto;
 			width: 250px;
 			img{
+				max-width: 250px;
 				width: auto;
-				max-width: 250px
 			}
 
 			.label{
 				font-size: 1.5rem;
 			}
 		}
+	}
+
+	.main.contacts .wayinfo .infomodal{
+		left: 2%;
+		width: 96%;
 	}
 }
 

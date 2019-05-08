@@ -6644,6 +6644,10 @@ _::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
   .page-brand-cat .main {
     padding-left: 0; } }
 
+@media (max-width: 650px) {
+  .main.contacts .wayinfo .infomodal {
+    width: 450px; } }
+
 @media (max-width: 550px) {
   .panel {
     display: block !important; }
@@ -6677,11 +6681,14 @@ _::-webkit-full-page-media, _:future, :root .user-access:checked + label:after {
     width: 250px; }
     .page-brand .goods .product__item img,
     .page-cat .goods .product__item img {
-      width: auto;
-      max-width: 250px; }
+      max-width: 250px;
+      width: auto; }
     .page-brand .goods .product__item .label,
     .page-cat .goods .product__item .label {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .main.contacts .wayinfo .infomodal {
+    left: 2%;
+    width: 96%; } }
 
 @media (max-width: 450px) {
   .homeslider {
