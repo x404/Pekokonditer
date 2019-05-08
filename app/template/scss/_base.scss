@@ -319,6 +319,11 @@ input::-webkit-inner-spin-button {
 			line-height: 1;			
 		}
 	}
+
+	.logo{
+		position: relative;
+		left: -105px;
+	}
 	.btn-order-callback{
 		line-height: 1.2;
 		margin-top: .5rem;

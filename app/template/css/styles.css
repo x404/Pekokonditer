@@ -3797,6 +3797,9 @@ input::-webkit-inner-spin-button {
     padding-top: 4rem; }
     .header__left p {
       line-height: 1; }
+  .header .logo {
+    position: relative;
+    left: -105px; }
   .header .btn-order-callback {
     line-height: 1.2;
     margin-top: .5rem; }
