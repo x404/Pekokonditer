@@ -5982,6 +5982,52 @@ div.pagination {
     margin-left: auto;
     margin-right: auto; }
 
+.sisea-results {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  position: relative;
+  text-transform: uppercase; }
+  .sisea-results-list {
+    border-top: 2px solid #eee; }
+
+.sisea-result {
+  display: flex;
+  margin: 2rem 0; }
+  .sisea-result p,
+  .sisea-result h3 {
+    margin: 0; }
+  .sisea-result h3 {
+    margin-bottom: .5rem;
+    font-weight: normal; }
+  .sisea-result-pic {
+    background-color: #eee;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-shrink: 0;
+    height: 135px;
+    width: 135px; }
+    @media (max-width: 450px) {
+      .sisea-result-pic {
+        display: none; } }
+    .sisea-result-pic img {
+      align-self: center;
+      margin: auto;
+      max-width: 80px;
+      height: auto; }
+  .sisea-result-text {
+    margin-left: 2.5rem; }
+    @media (max-width: 450px) {
+      .sisea-result-text {
+        margin-left: 0; } }
+  .sisea-result .extract .sisea-highlight {
+    font-weight: bold; }
+
+.sisea-highlight {
+  color: #f05525; }
+
+.sisea-page:before {
+  display: none !important; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
