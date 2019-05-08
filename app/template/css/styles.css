@@ -6005,13 +6005,17 @@ div.pagination {
   .sisea-result-pic {
     background-color: #eee;
     border-radius: 10px 10px 0 0;
-    display: flex;
     flex-shrink: 0;
-    height: 135px;
     width: 135px; }
     @media (max-width: 450px) {
       .sisea-result-pic {
         display: none; } }
+    .sisea-result-pic a {
+      height: 135px;
+      border-bottom: none;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     .sisea-result-pic img {
       align-self: center;
       margin: auto;
